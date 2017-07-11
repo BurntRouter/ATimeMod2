@@ -1,0 +1,12 @@
+[
+{
+  "modid": "atimemod2",
+  "name": "AdventureTime Mod 2",
+  "description": "The new and improved AdventureTime Mod!",
+  "version": "1.0",
+  "mcversion": "${mcversion}",
+  "authorList": ["Router1011"],
+  "credits": "Cartoon Network (Don't sue me)",
+  "logoFile": ""
+}
+]
