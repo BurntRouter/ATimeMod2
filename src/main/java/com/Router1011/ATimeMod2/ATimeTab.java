@@ -8,7 +8,7 @@ import com.Router1011.ATimeMod2.Items.ATimeItems;
 public class ATimeTab extends CreativeTabs{
 
 	public ATimeTab() {
-		super(ATimeMod2.modId);
+		super(ATimeMod.modId);
 	}
 
 	@Override

@@ -1,7 +1,41 @@
 #Blocks
 
 #Items
-item.ingotCopper.name=Copper Ingot
+item.ApplePie.name=Apple Gem Pie
+item.Bacon.name=Bacon
+item.BaconPancake.name=Bacon Pancake
+item.BassAxe.name=Bass Axe
+item.BillyGauntlet.name=Billy's Gauntlet
+item.BubbleGum.name=Bubble Gum
+item.Candy.name=Candy
+item.CottonCandy.name=Cotton Candy
+item.CrystalAxe.name=Crystal Axe
+item.CrystalGem.name=Crystal Gem
+item.CrystalHoe.name=Crystal Hoe
+item.CrystalPickaxe.name=Crystal Pickaxe
+item.CrystalShovel.name=Crystal Shovel
+item.CrystalSword.name=Crystal Sword
+item.DemonBlood.name=Demonic Blood
+item.DemonIngot.name=Demonic Ingot
+item.DemonSword.name=Demonic Sword
+item.Donut.name=Donut
+item.Enchiridion.name=The Enchiridion (WIP)
+item.EverythingBurrito.name=Everything Burrito
+item.Flour.name=Flour
+item.GemApple.name=Crystal Gem Apple
+item.GrassSword.name=Grass Sword
+item.IceShard.name=Ice Shard
+item.JakeBoots.name=Jake Booties (WIP)
+item.JakeChest.name=Jake Chestplate (WIP)
+item.JakeHead.name=Jake's Head (WIP)
+item.JakeLegs.name=Jake Leggings (WIP)
+item.JakeSword.name=Jake's Sword
+item.Lollipop.name=Lollipop
+item.Pancake.name=Pancake
+item.PaperSword.name=Paper Sword
+item.RootSword.name=Root Sword
+item.Scarlet.name=Scarlet
+item.SteelIngot.name=Steel Ingot
 
 #Mod
 itemGroup.atimemod2=AdventureTime Mod 2

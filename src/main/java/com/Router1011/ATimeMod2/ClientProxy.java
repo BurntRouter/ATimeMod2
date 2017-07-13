@@ -7,6 +7,6 @@ import net.minecraftforge.client.model.ModelLoader;
 public class ClientProxy extends CommonProxy {
 
  public void registerItemRenderer(Item item, int meta, String id) {
- ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ATimeMod2.modId + ":" + id, "inventory"));
+ ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ATimeMod.modId + ":" + id, "inventory"));
  }
 }
