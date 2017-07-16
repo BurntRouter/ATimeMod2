@@ -1,5 +1,7 @@
 package com.Router1011.ATimeMod2.Items;
 
+import com.Router1011.ATimeMod2.ATimeMod;
+
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -7,9 +9,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ATimeItems {
 	public static ItemBase ApplePie, Bacon, BaconPancake, BassAxe, BillyGauntlet, BubbleGum,
 	Candy, CottonCandy, CrystalAxe, CrystalGem, CrystalHoe, CrystalPickaxe, CrystalShovel, CrystalSword,
-	DemonBlood, DemonIngot, DemonSword, Donut, Enchiridion, EverythingBurrito, Flour, FourDSword, GemApple,
+	DemonBlood, DemonIngot, DemonSword, Donut, Enchiridion, EverythingBurrito, Flour, GemApple,
 	GrassSword, IceShard, JakeBoots, JakeChest, JakeHead, JakeLegs, JakeSword, Lollipop, Pancake, PaperSword,
-	RootSword, Scarlet, SteelIngot;
+	RootSword, SteelIngot;
+	
+	public static ATimeSword FourDSword, Scarlet;
 	 
 	 public static void init() {
 		 
@@ -31,9 +35,10 @@ public class ATimeItems {
 	DemonIngot = register(new ItemBase("DemonIngot"));
 	DemonSword = register(new ItemBase("DemonSword"));
 	Donut = register(new ItemBase("Donut"));
-	Enchiridion = register(new ItemBase("Enchiridion"));
+	Enchiridion = register(new ItemEnchiridion("Enchiridion"));
 	EverythingBurrito = register(new ItemBase("EverythingBurrito"));
 	Flour = register(new ItemBase("Flour"));
+	FourDSword = register(new ATimeSword("FourDSword", ATimeMod.FourD));
 	GemApple = register(new ItemBase("GemApple"));
 	GrassSword = register(new ItemBase("GrassSword"));
 	IceShard = register(new ItemBase("IceShard"));
@@ -46,7 +51,7 @@ public class ATimeItems {
 	Pancake = register(new ItemBase("Pancake"));
 	PaperSword = register(new ItemBase("PaperSword"));
 	RootSword = register(new ItemBase("RootSword"));
-	Scarlet = register(new ItemBase("Scarlet"));
+	Scarlet = register(new ATimeSword("Scarlet", ATimeMod.SCARLET));
 	SteelIngot = register(new ItemBase("SteelIngot"));	
 	 };
 

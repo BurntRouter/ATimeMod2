@@ -14,7 +14,6 @@ public class ItemBase extends Item implements ItemModelProvider{
 	 setUnlocalizedName(name);
 	 setRegistryName(name);
 	 setCreativeTab(ATimeMod.creativeTab);
-	 //setCreativeTab(TutorialMod.creativeTab); //this is commented out, because we don't have our creative-tab yet.
 	 }
 	 
 	 public void registerItemModel(Item item) {
