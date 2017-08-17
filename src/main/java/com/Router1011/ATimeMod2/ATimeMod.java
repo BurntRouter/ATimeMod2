@@ -1,5 +1,6 @@
 package com.Router1011.ATimeMod2;
 
+import com.Router1011.ATimeMod2.Entity.ModEntities;
 import com.Router1011.ATimeMod2.Items.ATimeItems;
 
 import net.minecraft.item.Item;
@@ -31,11 +32,12 @@ public class ATimeMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		System.out.println("We're back boys.");
 		ATimeItems.init();
+		ModEntities.registerEntites();
 	}
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+
 	}
 	
 	@Mod.EventHandler

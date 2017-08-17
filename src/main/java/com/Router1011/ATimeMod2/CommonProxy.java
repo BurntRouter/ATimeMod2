@@ -4,6 +4,7 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy {
  public void registerItemRenderer(Item item, int meta, String id) {
@@ -15,5 +16,4 @@ public class CommonProxy {
 	 TileEntity tileEntity = world.getTileEntity(null);
 	 return tileEntity;
  }
- 
 }
