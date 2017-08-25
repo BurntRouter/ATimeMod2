@@ -12,18 +12,21 @@ import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.util.ResourceLocation;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SideOnly(Side.CLIENT)
 public class RenderFinn extends RenderLiving 
 {
     protected ResourceLocation finnTexture;
 
     public RenderFinn(RenderManager manager) {
-        super(manager, new ModelFinn(), 1.0F); 
+        super(manager, new ModelFinn(), 0.5F); 
 	}
 
-	protected void setEntityTexture()
+	protected ResourceLocation setEntityTexture()
     {
-        finnTexture = new ResourceLocation(ATimeMod.modId+":textures/entity/Finn.png");
+        return finnTexture = new ResourceLocation(ATimeMod.modId+":textures/entity/Finn.png");
     }
 
 

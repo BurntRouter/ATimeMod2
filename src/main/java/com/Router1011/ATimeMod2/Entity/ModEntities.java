@@ -8,7 +8,7 @@ import net.minecraftforge.fml.common.registry.EntityRegistry;
 
 public class ModEntities {
 	public static void registerEntites(){
-		registerEntity(EntityFinn.class, "finn", 80, 3, false, 0x7AE8FF, 0x47FFE2);
+//		registerEntity(EntityFinn.class, "finn", 80, 3, false, 0x7AE8FF, 0x47FFE2);
 	}
 	
 
@@ -27,6 +27,6 @@ public class ModEntities {
 	 */
 	private static void registerEntity(final Class<? extends Entity> entityClass, final String entityName, final int trackingRange, final int updateFrequency, final boolean sendsVelocityUpdates, final int eggPrimary, final int eggSecondary) {
 		final ResourceLocation registryName = new ResourceLocation(ATimeMod.modId, entityName);
-		EntityRegistry.registerModEntity(entityClass, registryName.toString(), entityID++, ATimeMod.instance, trackingRange, updateFrequency, sendsVelocityUpdates, eggPrimary, eggSecondary);
+//		EntityRegistry.registerModEntity(entityClass, registryName.toString(), entityID++, ATimeMod.instance, trackingRange, updateFrequency, sendsVelocityUpdates, eggPrimary, eggSecondary);
 }
 }

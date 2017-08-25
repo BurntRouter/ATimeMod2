@@ -1,5 +1,7 @@
 package com.Router1011.ATimeMod2.Models;
 
+import com.Router1011.ATimeMod2.Entity.EntityFinn;
+
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
@@ -7,9 +9,9 @@ import net.minecraft.util.math.MathHelper;
 
 public class ModelFinn extends ModelBase
 {
-    public ModelRenderer head;
+    ModelRenderer head;
     ModelRenderer body;
-    public ModelRenderer rightarm;
+    ModelRenderer rightarm;
     ModelRenderer leftarm;
     ModelRenderer rightleg;
     ModelRenderer leftleg;
@@ -192,7 +194,7 @@ public class ModelFinn extends ModelBase
 
     public void setRotationAngles(float var1, float var2, float var3, float var4, float var5, float var6)
     {
-        super.setRotationAngles(var1, var2, var3, var4, var5, var6, (Entity)null);
+        super.setRotationAngles(var1, var2, var3, var4, var5, var6, null);
         this.rightleg.rotateAngleX = MathHelper.cos(var1 * 0.6662F) * 1.0F * var2;
         this.leftleg.rotateAngleX = MathHelper.cos(var1 * 0.6662F + (float)Math.PI) * 1.0F * var2;
         this.rightarm.rotateAngleX = MathHelper.cos(var1 * 0.6662F + (float)Math.PI) * 1.0F * var2;

@@ -16,7 +16,6 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@SideOnly(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
 
    public void registerItemRenderer(Item item, int meta, String id) {
@@ -31,6 +30,7 @@ public class ClientProxy extends CommonProxy {
 
    public static void registerEntityRenderers()
    {
-       RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class, (RenderManager manager) -> new RenderFinn(manager));
+//       RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class, (RenderManager manager) -> new RenderFinn(manager));
+//       RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class, RenderFinn::new);
    }
 }

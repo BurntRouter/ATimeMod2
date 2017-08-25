@@ -7,7 +7,7 @@ import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class ATimeItems {
-	public static ItemBase ApplePie, Bacon, BaconPancake, BassAxe, BillyGauntlet, BubbleGum,
+	public static ItemBase Bacon, BaconPancake, BassAxe, BillyGauntlet, BubbleGum,
 	Candy, CottonCandy, CrystalAxe, CrystalGem, CrystalHoe, CrystalPickaxe, CrystalShovel, CrystalSword,
 	DemonBlood, DemonIngot, DemonSword, Donut, Enchiridion, EverythingBurrito, Flour, GemApple,
 	GrassSword, IceShard, JakeBoots, JakeChest, JakeHead, JakeLegs, JakeSword, Lollipop, Pancake, PaperSword,
@@ -15,9 +15,9 @@ public class ATimeItems {
 	
 	public static ATimeSword FourDSword, Scarlet;
 	 
-	 public static void init() {
+	 public static void initItems() {
 		 
-	ApplePie = register(new ItemBase("ApplePie"));
+//	ApplePie = register(new ItemBase("ApplePie"));
 	Bacon = register(new ItemBase("Bacon"));
 	BaconPancake = register(new ItemBase("BaconPancake"));
 	BassAxe = register(new ItemBase("BassAxe"));

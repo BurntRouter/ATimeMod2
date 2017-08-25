@@ -26,4 +26,4 @@ public class ItemBase extends Item implements ItemModelProvider{
 	 return this;
 	 }
 
-	}
+}
