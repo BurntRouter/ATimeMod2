@@ -5,7 +5,10 @@
   "description": "The new and improved AdventureTime Mod!",
   "version": "1.0",
   "mcversion": "${mcversion}",
-  "authorList": ["Router1011"],
+  "authorList": ["Router1011", "Z_Doctor"],
+  "useDependencyInformation"; = true,
+  "requiredMods": ["lazymodder"],
+  "dependencies": ["lazymodder"],
   "credits": "Cartoon Network (Don't sue me)",
   "logoFile": ""
 }

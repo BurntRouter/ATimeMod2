@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, version = ATimeMod.VERSION, acceptedMinecraftVersions = "[1.12.1]")
+@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, version = ATimeMod.VERSION, acceptedMinecraftVersions = "[1.12.1]", useMetadata = true)
 public class ATimeMod {
 
 	@SidedProxy(serverSide = "com.Router1011.ATimeMod2.CommonProxy", clientSide = "com.Router1011.ATimeMod2.ClientProxy")
