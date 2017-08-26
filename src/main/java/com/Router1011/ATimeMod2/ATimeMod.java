@@ -1,54 +1,46 @@
 package com.Router1011.ATimeMod2;
 
-import com.Router1011.ATimeMod2.Blocks.ATimeBlocks;
-import com.Router1011.ATimeMod2.Entity.ModEntities;
-import com.Router1011.ATimeMod2.Items.ATimeItems;
-import com.Router1011.ATimeMod2.Registry.*;
-
 import net.minecraft.item.Item;
+import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.oredict.OreDictionary;
-import net.minecraftforge.common.util.EnumHelper;
 
-@Mod(modid = ATimeMod.modId, name = ATimeMod.name, version = ATimeMod.version, acceptedMinecraftVersions = "[1.10.2]")
+@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.1]", dependencies = "required-after:lazymodder@[0.6,)")
 public class ATimeMod {
 
-	@SidedProxy(serverSide = "com.Router1011.ATimeMod2.CommonProxy", clientSide = "com.Router1011.ATimeMod2.ClientProxy")
+	@SidedProxy(clientSide = "com.Router1011.ATimeMod2.ClientProxy", serverSide = "com.Router1011.ATimeMod2.CommonProxy")
 	public static CommonProxy proxy;
-	
-	public static final String modId = "atimemod2";
-	public static final String name = "AdventureTime Mod 2";
-	public static final String version = "1.0";
-	
+
+	public static final String MODID = "atimemod2";
+	public static final String NAME = "AdventureTime Mod 2";
+	public static final String VERSION = "1.1";
+
 	public static final ATimeTab creativeTab = new ATimeTab();
 	public static final Item.ToolMaterial SCARLET = EnumHelper.addToolMaterial("SCARLET", 3, 3000, 10.0F, 16, 25);
 	public static final Item.ToolMaterial FourD = EnumHelper.addToolMaterial("FourD", 0, 1000, 10.0F, 12, 0);
-	
-	@Mod.Instance(modId)
+
+	@Instance(MODID)
 	public static ATimeMod instance;
-	
-	@Mod.EventHandler
+
+	@EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		proxy.preInit(event);
 		System.out.println("[ATimeMod2] We're back boys.");
-		ATimeBlocks.initBlocks();
-		ATimeItems.initItems();
-		ClientProxy.registerEntityRenderers();
-		Registry.mainRegistry();
-		OreDictionary.registerOre("ingotSteel", ATimeItems.SteelIngot);
 	}
-	
-	@Mod.EventHandler
+
+	@EventHandler
 	public void init(FMLInitializationEvent event) {
-		ModEntities.registerEntites();
+		proxy.init(event);
 		System.out.println("[ATimeMod2] Loaded and registered everything successfully!");
 	}
-	
-	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
 
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event) {
+		proxy.postInit(event);
 	}
 }
