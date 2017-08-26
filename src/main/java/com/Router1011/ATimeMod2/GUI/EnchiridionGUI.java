@@ -1,10 +1,10 @@
 package com.Router1011.ATimeMod2.GUI;
 
+import org.lwjgl.opengl.GL11;
+
 import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
 import net.minecraft.util.ResourceLocation;
-
-import org.lwjgl.opengl.GL11;
 
 public class EnchiridionGUI extends GuiScreen {
 

@@ -3,7 +3,6 @@ package com.Router1011.ATimeMod2.Models;
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
 
 public class ModelTreeTrunks extends ModelBase {
 	ModelRenderer leg2;

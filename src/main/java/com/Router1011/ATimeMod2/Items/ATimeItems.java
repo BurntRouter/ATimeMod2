@@ -2,10 +2,6 @@ package com.Router1011.ATimeMod2.Items;
 
 import com.Router1011.ATimeMod2.ATimeMod;
 
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-
 public class ATimeItems {
 	public static ItemBase Bacon, BaconPancake, BassAxe, BillyGauntlet, BubbleGum, Candy, CottonCandy, CrystalAxe,
 			CrystalGem, CrystalHoe, CrystalPickaxe, CrystalShovel, CrystalSword, DemonBlood, DemonIngot, DemonSword,

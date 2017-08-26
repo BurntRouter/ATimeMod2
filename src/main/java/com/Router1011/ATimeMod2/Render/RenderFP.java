@@ -3,7 +3,6 @@ package com.Router1011.ATimeMod2.Render;
 import com.Router1011.ATimeMod2.ATimeMod;
 import com.Router1011.ATimeMod2.Entity.EntityFinn;
 import com.Router1011.ATimeMod2.Models.ModelFP;
-import com.Router1011.ATimeMod2.Models.ModelFinn;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;

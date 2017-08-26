@@ -1,7 +1,5 @@
 package com.Router1011.ATimeMod2.Models;
 
-import com.Router1011.ATimeMod2.Entity.EntityFinn;
-
 import net.minecraft.client.model.ModelBase;
 import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
