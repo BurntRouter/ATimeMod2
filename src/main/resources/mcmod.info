@@ -6,8 +6,5 @@
 	"mcversion": "1.12.1",
 	"authorList": ["Router1011", "Z_Doctor"],
 	"credits": "Cartoon Network (Don't sue me)",
-	"logoFile": "logo.png",
-	"useDependencyInformation"; = true,
-	"requiredMods": ["lazymodder"],
-	"dependencies": ["lazymodder"]
+	"logoFile": "logo.png"
 }]
