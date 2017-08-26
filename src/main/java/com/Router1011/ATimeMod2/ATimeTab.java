@@ -1,24 +1,24 @@
 package com.Router1011.ATimeMod2;
 
-
-import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import com.Router1011.ATimeMod2.Items.ATimeItems;
 
-public class ATimeTab extends CreativeTabs{
+import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.ItemStack;
+
+public class ATimeTab extends CreativeTabs {
 
 	public ATimeTab() {
-		super(ATimeMod.modId);
+		super(ATimeMod.MODID);
 	}
 
 	@Override
-	public Item getTabIconItem() {
-		return ATimeItems.Scarlet;
+	public ItemStack getTabIconItem() {
+		return new ItemStack(ATimeItems.Scarlet);
 	}
-	
-	 @Override
-	 public boolean hasSearchBar() {
-		 return true;
-	 }
+
+	@Override
+	public boolean hasSearchBar() {
+		return false;
+	}
 
 }

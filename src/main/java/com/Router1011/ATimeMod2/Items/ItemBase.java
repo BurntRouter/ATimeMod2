@@ -3,27 +3,19 @@ package com.Router1011.ATimeMod2.Items;
 import com.Router1011.ATimeMod2.ATimeMod;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
+import zdoctor.lazymodder.easy.items.EasyItem;
 
-public class ItemBase extends Item implements ItemModelProvider{
-	 
-	 protected String name;
-	 
-	 public ItemBase(String name) {
-	 this.name = name;
-	 setUnlocalizedName(name);
-	 setRegistryName(name);
-	 setCreativeTab(ATimeMod.creativeTab);
-	 }
-	 
-	 public void registerItemModel(Item item) {
-	 ATimeMod.proxy.registerItemRenderer(this, 0, name);
-	 }
-	 
-	 @Override
-	 public ItemBase setCreativeTab(CreativeTabs tab) {
-	 super.setCreativeTab(tab);
-	 return this;
-	 }
+public class ItemBase extends EasyItem {
+
+	public ItemBase(String name) {
+		super(name);
+		setCreativeTab(ATimeMod.creativeTab);
+	}
+
+	@Override
+	public ItemBase setCreativeTab(CreativeTabs tab) {
+		super.setCreativeTab(tab);
+		return this;
+	}
 
 }

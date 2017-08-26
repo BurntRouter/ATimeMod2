@@ -9,8 +9,8 @@ import net.minecraft.item.Item;
 
 public class SteelOre extends BlockBase {
 
-	public SteelOre(Material material, String blockName) {
-		super(material, blockName);
+	public SteelOre(String blockName, Material material) {
+		super(blockName, material);
 		this.setHarvestLevel("pickaxe", 3);
 	}
 

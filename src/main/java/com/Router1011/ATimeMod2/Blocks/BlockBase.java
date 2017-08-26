@@ -9,22 +9,13 @@ import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.init.Blocks;
 import net.minecraft.item.Item;
+import zdoctor.lazymodder.easy.blocks.EasyBlock;
 
-public class BlockBase extends Block {
+public class BlockBase extends EasyBlock {
 
-	protected String name;
-	
-	public BlockBase(Material materialIn, String name) {
-		super(materialIn);
-		this.name = name;
-		setUnlocalizedName(name);
-		setRegistryName(name);
+	public BlockBase(String name, Material materialIn) {
+		super(name, materialIn);
 		setCreativeTab(ATimeMod.creativeTab);
 	}
-	
-	public void registerItemModel(Item itemBlock) {
-		ATimeMod.proxy.registerItemRenderer(itemBlock, 0, name);
-		
-	}
-	
+
 }

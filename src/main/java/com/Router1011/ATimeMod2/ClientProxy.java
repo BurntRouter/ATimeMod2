@@ -12,25 +12,38 @@ import net.minecraft.tileentity.TileEntity;
 import net.minecraft.world.World;
 import net.minecraftforge.client.model.ModelLoader;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class ClientProxy extends CommonProxy {
 
-   public void registerItemRenderer(Item item, int meta, String id) {
-   ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ATimeMod.modId + ":" + id, "inventory"));
-   }
+	// public void registerItemRenderer(Item item, int meta, String id) {
+	// ModelLoader.setCustomModelResourceLocation(item, meta, new
+	// ModelResourceLocation(ATimeMod.modId + ":" + id, "inventory"));
+	// }
+	@Override
+	public void preInit(FMLPreInitializationEvent e) {
+		super.preInit(e);
+		// this.registerEntityRenderers();
+	}
 
-   public void preInit(FMLPreInitializationEvent event)
-   {
-	   this.registerEntityRenderers();
-   }
-   
+	@Override
+	public void init(FMLInitializationEvent e) {
+		super.init(e);
+	}
 
-   public static void registerEntityRenderers()
-   {
-//       RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class, (RenderManager manager) -> new RenderFinn(manager));
-//       RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class, RenderFinn::new);
-   }
+	@Override
+	public void postInit(FMLPostInitializationEvent e) {
+		super.postInit(e);
+	}
+
+	public static void registerEntityRenderers() {
+		// RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class,
+		// (RenderManager manager) -> new RenderFinn(manager));
+		// RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class,
+		// RenderFinn::new);
+	}
 }

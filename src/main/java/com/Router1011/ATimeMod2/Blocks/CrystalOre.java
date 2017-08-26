@@ -9,12 +9,12 @@ import net.minecraft.item.Item;
 
 public class CrystalOre extends BlockBase {
 
-	public CrystalOre(Material material, String blockName) {
-		super(material, blockName);
+	public CrystalOre(String blockName, Material material) {
+		super(blockName, material);
 		this.setHarvestLevel("pickaxe", 3);
 	}
-	
-	public Item getItemDropped(int metadata, Random random, int fortune){
+
+	public Item getItemDropped(int metadata, Random random, int fortune) {
 		return ATimeItems.CrystalGem;
 	}
 
