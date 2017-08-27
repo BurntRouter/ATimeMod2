@@ -13,7 +13,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 @Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.1]", dependencies = "required-after:lazymodder@[0.6,)")
 public class ATimeMod {
 
-	@SidedProxy(clientSide = "com.Router1011.ATimeMod2.ClientProxy", serverSide = "com.Router1011.ATimeMod2.CommonProxy")
+	@SidedProxy(clientSide = "com.router1011.atimemod2.ClientProxy", serverSide = "com.router1011.atimemod2.CommonProxy")
 	public static CommonProxy proxy;
 
 	public static final String MODID = "atimemod2";
