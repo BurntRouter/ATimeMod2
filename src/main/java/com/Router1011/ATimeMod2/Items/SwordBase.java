@@ -9,11 +9,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
 import zdoctor.lazymodder.easy.items.EasyTools.EasyWeapon;
 
-public class ATimeSword extends EasyWeapon {
+public class SwordBase extends EasyWeapon {
 
 	protected String name;
 
-	public ATimeSword(String name, ToolMaterial material) {
+	public SwordBase(String name, ToolMaterial material) {
 		super(name, material);
 		setCreativeTab(ATimeMod.creativeTab);
 
@@ -28,7 +28,7 @@ public class ATimeSword extends EasyWeapon {
 	}
 
 	@Override
-	public ATimeSword setCreativeTab(CreativeTabs tab) {
+	public SwordBase setCreativeTab(CreativeTabs tab) {
 		super.setCreativeTab(tab);
 		return this;
 	}
