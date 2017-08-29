@@ -7,9 +7,10 @@ import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.init.MobEffects;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.PotionEffect;
-import zdoctor.lazymodder.easy.items.EasyTools.EasyWeapon;
+import net.minecraft.util.NonNullList;
+import zdoctor.lazymodder.easy.items.EasyItemSword;
 
-public class SwordBase extends EasyWeapon {
+public class SwordBase extends EasyItemSword {
 
 	protected String name;
 
@@ -18,7 +19,7 @@ public class SwordBase extends EasyWeapon {
 		setCreativeTab(ATimeMod.creativeTab);
 
 	}
-
+	
 	@Override
 	public boolean hitEntity(ItemStack stack, EntityLivingBase target, EntityLivingBase attacker) {
 		if (this.name == "FourDSword") {

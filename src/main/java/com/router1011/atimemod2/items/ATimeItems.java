@@ -2,9 +2,10 @@ package com.router1011.atimemod2.items;
 
 import com.router1011.atimemod2.ATimeMod;
 
+import net.minecraft.item.Item;
 import zdoctor.lazymodder.easy.items.EasyArmor;
-import zdoctor.lazymodder.easy.items.EasyTools;
-import zdoctor.lazymodder.easy.items.EasyTools.*;
+import zdoctor.lazymodder.easy.items.EasyItemTool;
+import zdoctor.lazymodder.easy.items.EasyItemTool.*;
 
 public class ATimeItems {
 	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard, SteelIngot;
@@ -41,7 +42,8 @@ public class ATimeItems {
 		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
 		DemonBlood = new ItemBase("DemonBlood");
 		DemonIngot = new ItemBase("DemonIngot");
-		DemonSword = new SwordBase("DemonSword", null);
+		//You can't pass a null tool material >.>
+		DemonSword = new SwordBase("DemonSword", Item.ToolMaterial.IRON);
 		Donut = new FoodBase("Donut", 4, 6F, false);
 		Enchiridion = new ItemEnchiridion("Enchiridion");
 		EverythingBurrito = new FoodBase("EverythingBurrito", 16, 8F, false);
@@ -57,8 +59,9 @@ public class ATimeItems {
 		JakeSword = new SwordBase("JakeSword", ATimeMod.SCARLET);
 		Lollipop = new FoodBase("Lollipop", 1, 1F, false);
 		Pancake = new FoodBase("Pancake", 14, 7F, false);
-		PaperSword = new SwordBase("PaperSword", null);
-		RootSword = new SwordBase("RootSword", null);
+		// These too. Why were they null?
+		PaperSword = new SwordBase("PaperSword", Item.ToolMaterial.IRON);
+		RootSword = new SwordBase("RootSword", Item.ToolMaterial.IRON);
 		Scarlet = new SwordBase("Scarlet", ATimeMod.SCARLET);
 		SteelIngot = new ItemBase("SteelIngot");
 	};
