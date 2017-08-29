@@ -2,51 +2,63 @@ package com.router1011.atimemod2.items;
 
 import com.router1011.atimemod2.ATimeMod;
 
+import zdoctor.lazymodder.easy.items.EasyArmor;
+import zdoctor.lazymodder.easy.items.EasyTools;
+import zdoctor.lazymodder.easy.items.EasyTools.*;
+
 public class ATimeItems {
-	public static ItemBase BassAxe, BillyGauntlet, CrystalAxe, CrystalGem, CrystalHoe, CrystalPickaxe, CrystalShovel,
-	CrystalSword, DemonBlood, DemonIngot, DemonSword, Enchiridion, Flour, GrassSword, IceShard, JakeBoots, JakeChest, 
-	JakeHead, JakeLegs, JakeSword, PaperSword, RootSword, SteelIngot;
+	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard, SteelIngot;
+
+	public static ArmorBase JakeBoots, JakeChest, JakeHead, JakeLegs;
+	
+	public static ShovelBase CrystalShovel;
+
+	public static AxeBase CrystalAxe;
+	
+	public static HoeBase CrystalHoe;
+	
+	public static PickaxeBase CrystalPickaxe;
 
 	public static FoodBase Bacon, BaconPancake, BubbleGum, Candy, CottonCandy, Donut, EverythingBurrito, GemApple, Lollipop, Pancake;
 
-	public static SwordBase FourDSword, Scarlet;
+	public static SwordBase CrystalSword, DemonSword, FourDSword, GrassSword, JakeSword, Scarlet, PaperSword, RootSword;
 
 	public static void initItems() {
 
 		// ApplePie = new ItemBase("ApplePie");
-		Bacon = new FoodBase("Bacon", 6, 6F, false);
+		Bacon = new FoodBase("Bacon", 6, 6F, true);
 		BaconPancake = new FoodBase("BaconPancake", 16, 7F, false);
 		BassAxe = new ItemBase("BassAxe");
 		BillyGauntlet = new ItemBase("BillyGauntlet");
 		BubbleGum = new FoodBase("BubbleGum", 1, 1F, false);
 		Candy = new FoodBase("Candy", 2, 2F, false);
 		CottonCandy = new FoodBase("CottonCandy", 2, 2F, false);
-		CrystalAxe = new ItemBase("CrystalAxe");
+		CrystalAxe = new AxeBase("CrystalAxe", ATimeMod.CRYSTAL);
 		CrystalGem = new ItemBase("CrystalGem");
-		CrystalHoe = new ItemBase("CrystalHoe");
-		CrystalPickaxe = new ItemBase("CrystalPickaxe");
-		CrystalShovel = new ItemBase("CrystalShovel");
-		CrystalSword = new ItemBase("CrystalSword");
+		CrystalHoe = new HoeBase("CrystalHoe", ATimeMod.CRYSTAL);
+		CrystalPickaxe = new PickaxeBase("CrystalPickaxe", ATimeMod.CRYSTAL);
+		CrystalShovel = new ShovelBase("CrystalShovel", ATimeMod.CRYSTAL);
+		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
 		DemonBlood = new ItemBase("DemonBlood");
 		DemonIngot = new ItemBase("DemonIngot");
-		DemonSword = new ItemBase("DemonSword");
+		DemonSword = new SwordBase("DemonSword", null);
 		Donut = new FoodBase("Donut", 4, 6F, false);
 		Enchiridion = new ItemEnchiridion("Enchiridion");
 		EverythingBurrito = new FoodBase("EverythingBurrito", 16, 8F, false);
 		Flour = new ItemBase("Flour");
-		FourDSword = new SwordBase("FourDSword", ATimeMod.FourD);
+		FourDSword = new SwordBase("FourDSword", ATimeMod.FOURD);
 		GemApple = new FoodBase("GemApple", 20, 20F, false);
-		GrassSword = new ItemBase("GrassSword");
+		GrassSword = new SwordBase("GrassSword", ATimeMod.GRASS);
 		IceShard = new ItemBase("IceShard");
-		JakeBoots = new ItemBase("JakeBoots");
-		JakeChest = new ItemBase("JakeChest");
-		JakeHead = new ItemBase("JakeHead");
-		JakeLegs = new ItemBase("JakeLegs");
-		JakeSword = new ItemBase("JakeSword");
+//		JakeBoots = new ArmorBase("JakeBoots", null, 0, null);
+//		JakeChest = new ArmorBase("JakeChest", null, 0, null);
+//		JakeHead = new ArmorBase("JakeHead", null, 0, null);
+//		JakeLegs = new ArmorBase("JakeLegs", null, 0, null);
+		JakeSword = new SwordBase("JakeSword", ATimeMod.SCARLET);
 		Lollipop = new FoodBase("Lollipop", 1, 1F, false);
 		Pancake = new FoodBase("Pancake", 14, 7F, false);
-		PaperSword = new ItemBase("PaperSword");
-		RootSword = new ItemBase("RootSword");
+		PaperSword = new SwordBase("PaperSword", null);
+		RootSword = new SwordBase("RootSword", null);
 		Scarlet = new SwordBase("Scarlet", ATimeMod.SCARLET);
 		SteelIngot = new ItemBase("SteelIngot");
 	};
