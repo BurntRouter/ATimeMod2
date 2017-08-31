@@ -8,9 +8,9 @@ public class ATimeGuis {
 	public static int enchiridionID;
 
 	public static void initGuis() {
-		guiHandler = new EasyGuiHandler();
+//		guiHandler = new EasyGuiHandler();
 
-		enchiridionID = guiHandler.register(EnchiridionGUI.class);
+//		enchiridionID = guiHandler.register(EnchiridionGUI.class);
 	}
 
 }
