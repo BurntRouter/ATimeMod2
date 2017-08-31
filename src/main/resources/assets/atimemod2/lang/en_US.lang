@@ -42,5 +42,22 @@ item.rootsword.name=Root Sword
 item.scarlet.name=Scarlet
 item.steelingot.name=Steel Ingot
 
+#Entities
+entity.billy.name=Billy
+entity.bmo.name=BMO
+entity.fp.name=Fire Princess
+entity.finn.name=Finn
+entity.gunter.name=Gunter
+entity.iceking.name=Ice King
+entity.jake.name=Jake
+entity.lich.name=The Lich
+entity.lsp.name=Lumpy Space Princess
+entity.marceline.name=Marceline
+entity.neptr.name=NEPTR
+entity.pb.name=Princess Bubblegum
+entity.peppermintzombie.name=Peppermint Zombie
+entity.treetrunks.name=Tree Trunks
+
+
 #Mod
 itemGroup.atimemod2=AdventureTime Mod 2

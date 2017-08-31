@@ -5,7 +5,7 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
 
-public class ModelPepermintZombie extends ModelBase {
+public class ModelPeppermintZombie extends ModelBase {
 	ModelRenderer leg_1;
 	ModelRenderer leg_2;
 	ModelRenderer face;
@@ -20,7 +20,7 @@ public class ModelPepermintZombie extends ModelBase {
 	ModelRenderer face_peace_3;
 	ModelRenderer face_peace_4;
 
-	public ModelPepermintZombie() {
+	public ModelPeppermintZombie() {
 		this.textureWidth = 256;
 		this.textureHeight = 64;
 		this.leg_1 = new ModelRenderer(this, 5, 5);
