@@ -14,11 +14,11 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
-public class EntityPepermintZombie extends EntityCreature {
+public class EntityPeppermintZombie extends EntityCreature {
 	private int conversionTime = 0;
 	public String npcName;
 
-	public EntityPepermintZombie(World var1) {
+	public EntityPeppermintZombie(World var1) {
 		super(var1);
 		this.tasks.addTask(33, new EntityAIWander(this, 0.3D));
 		this.tasks.addTask(32, new EntityAIWatchClosest(this, EntityPlayer.class, 8.0F));

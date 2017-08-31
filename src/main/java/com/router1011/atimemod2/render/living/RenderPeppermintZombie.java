@@ -2,7 +2,7 @@ package com.router1011.atimemod2.render.living;
 
 import com.router1011.atimemod2.ATimeMod;
 import com.router1011.atimemod2.entity.EntityFinn;
-import com.router1011.atimemod2.models.ModelPepermintZombie;
+import com.router1011.atimemod2.models.ModelPeppermintZombie;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.client.renderer.entity.RenderManager;
@@ -13,11 +13,11 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 import zdoctor.lazymodder.builtin.helpers.TextureLocation.EntityTextureLocation;
 
 @SideOnly(Side.CLIENT)
-public class RenderPepermintZombie extends RenderLiving {
+public class RenderPeppermintZombie extends RenderLiving {
 	public static final ResourceLocation TEXTURE = new EntityTextureLocation(ATimeMod.MODID, "PepermintZombie");
 
-	public RenderPepermintZombie(RenderManager manager) {
-		super(manager, new ModelPepermintZombie(), 0.5F);
+	public RenderPeppermintZombie(RenderManager manager) {
+		super(manager, new ModelPeppermintZombie(), 0.5F);
 	}
 
 	@Override

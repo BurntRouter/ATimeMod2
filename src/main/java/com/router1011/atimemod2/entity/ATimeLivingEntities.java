@@ -12,6 +12,8 @@ import com.router1011.atimemod2.render.living.RenderMarceline;
 import com.router1011.atimemod2.render.living.RenderNEPTR;
 import com.router1011.atimemod2.render.living.RenderPB;
 
+//github.com/BurntRouter/ATimeMod2.git
+
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import zdoctor.lazymodder.easy.entity.living.EasyLivingEntity;

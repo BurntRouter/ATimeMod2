@@ -43,6 +43,7 @@ public class ATimeItems {
 		DemonBlood = new ItemBase("DemonBlood");
 		DemonIngot = new ItemBase("DemonIngot");
 		//You can't pass a null tool material >.>
+		//Wanna bet?
 		DemonSword = new SwordBase("DemonSword", Item.ToolMaterial.IRON);
 		Donut = new FoodBase("Donut", 4, 6F, false);
 		Enchiridion = new ItemEnchiridion("Enchiridion");
