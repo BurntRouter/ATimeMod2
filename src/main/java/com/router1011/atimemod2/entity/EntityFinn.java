@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class EntityFinn extends EntityCreature {
 	private int conversionTime = 0;
 	public String npcName;
-
+	
 	public EntityFinn(World var1) {
 		super(var1);
 		this.tasks.addTask(33, new EntityAIWander(this, 0.3D));
