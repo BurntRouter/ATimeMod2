@@ -1,5 +1,8 @@
 package com.router1011.atimemod2.entity;
 
+import com.router1011.atimemod2.render.living.RenderBMO;
+
+import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -13,8 +16,9 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
+import zdoctor.lazymodder.easy.interfaces.IRenderLiving;
 
-public class EntityBMO extends EntityCreature {
+public class EntityBMO extends EntityCreature implements IRenderLiving {
 	private int conversionTime = 0;
 	public String npcName;
 
@@ -111,6 +115,11 @@ public class EntityBMO extends EntityCreature {
 	 */
 	protected void playStepSound(int var1, int var2, int var3, int var4) {
 		this.playSound(null, 1, 1);
+	}
+
+	@Override
+	public Class<? extends RenderLiving> getLivingRenderer() {
+		return RenderBMO.class;
 	}
 
 }

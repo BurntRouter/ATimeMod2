@@ -1,5 +1,8 @@
 package com.router1011.atimemod2.entity;
 
+import com.router1011.atimemod2.render.living.RenderFinn;
+
+import net.minecraft.client.renderer.entity.RenderLiving;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityCreature;
 import net.minecraft.entity.SharedMonsterAttributes;
@@ -13,11 +16,12 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
+import zdoctor.lazymodder.easy.interfaces.IRenderLiving;
 
-public class EntityFinn extends EntityCreature {
+public class EntityFinn extends EntityCreature implements IRenderLiving {
 	private int conversionTime = 0;
 	public String npcName;
-	
+
 	public EntityFinn(World var1) {
 		super(var1);
 		this.tasks.addTask(33, new EntityAIWander(this, 0.3D));
@@ -111,6 +115,11 @@ public class EntityFinn extends EntityCreature {
 	 */
 	protected void playStepSound(int var1, int var2, int var3, int var4) {
 		this.playSound(null, 1, 1);
+	}
+
+	@Override
+	public Class<? extends RenderLiving> getLivingRenderer() {
+		return RenderFinn.class;
 	}
 
 }

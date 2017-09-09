@@ -1,11 +1,8 @@
 package com.router1011.atimemod2;
 
-import com.router1011.atimemod2.entity.ATimeLivingEntities;
-
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import zdoctor.lazymodder.easy.registry.EasyRegistry;
 
 public class ClientProxy extends CommonProxy {
 
@@ -16,7 +13,6 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
 		super.preInit(e);
-		ATimeLivingEntities.registerRenders();
 	}
 
 	@Override
