@@ -39,17 +39,12 @@ public class ATimeItems {
 		CrystalHoe = new HoeBase("CrystalHoe", ATimeMod.CRYSTAL);
 		CrystalPickaxe = new PickaxeBase("CrystalPickaxe", ATimeMod.CRYSTAL);
 		CrystalShovel = new ShovelBase("CrystalShovel", ATimeMod.CRYSTAL);
-		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
 		DemonBlood = new ItemBase("DemonBlood");
 		DemonIngot = new ItemBase("DemonIngot");
-		//You can't pass a null tool material >.>
-		//Wanna bet?
-		DemonSword = new SwordBase("DemonSword", Item.ToolMaterial.IRON);
 		Donut = new FoodBase("Donut", 4, 6F, false);
 		Enchiridion = new ItemEnchiridion("Enchiridion");
 		EverythingBurrito = new FoodBase("EverythingBurrito", 16, 8F, false);
 		Flour = new ItemBase("Flour");
-		FourDSword = new SwordBase("FourDSword", ATimeMod.FOURD);
 		GemApple = new FoodBase("GemApple", 20, 20F, false);
 		GrassSword = new SwordBase("GrassSword", ATimeMod.GRASS);
 		IceShard = new ItemBase("IceShard");
@@ -57,14 +52,18 @@ public class ATimeItems {
 //		JakeChest = new ArmorBase("JakeChest", null, 0, null);
 //		JakeHead = new ArmorBase("JakeHead", null, 0, null);
 //		JakeLegs = new ArmorBase("JakeLegs", null, 0, null);
-		JakeSword = new SwordBase("JakeSword", ATimeMod.SCARLET);
 		Lollipop = new FoodBase("Lollipop", 1, 1F, false);
 		Pancake = new FoodBase("Pancake", 14, 7F, false);
+		SteelIngot = new ItemBase("SteelIngot");
 		// These too. Why were they null?
+		// Swords
+		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
+		FourDSword = new SwordBase("FourDSword", ATimeMod.FOURD);
 		PaperSword = new SwordBase("PaperSword", Item.ToolMaterial.IRON);
 		RootSword = new SwordBase("RootSword", Item.ToolMaterial.IRON);
 		Scarlet = new SwordBase("Scarlet", ATimeMod.SCARLET);
-		SteelIngot = new ItemBase("SteelIngot");
+		JakeSword = new SwordBase("JakeSword", ATimeMod.SCARLET);
+		DemonSword = new SwordBase("DemonSword", Item.ToolMaterial.IRON);
 	};
 
 }
