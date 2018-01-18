@@ -1,9 +1,9 @@
 package com.router1011.atimemod2.items;
 
 import com.router1011.atimemod2.ATimeMod;
+import com.router1011.atimemod2.lazymodder.item.EasyItem;
 
 import net.minecraft.creativetab.CreativeTabs;
-import zdoctor.lazymodder.easy.items.EasyItem;
 
 public class ItemBase extends EasyItem {
 

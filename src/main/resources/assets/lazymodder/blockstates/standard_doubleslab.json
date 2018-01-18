@@ -1,0 +1,40 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "model": "cube_all"
+    },
+    "variants": {
+        "variant": {
+            "oak": {
+                "textures": {
+                    "all": "blocks/planks_oak"
+                }
+            },
+            "spruce": {
+                "textures": {
+                    "all": "blocks/planks_spruce"
+                }
+            },
+            "birch": {
+                "textures": {
+                    "all": "blocks/planks_birch"
+                }
+            },
+            "jungle": {
+                "textures": {
+                    "all": "blocks/planks_jungle"
+                }
+            },
+            "acacia": {
+                "textures": {
+                    "all": "blocks/planks_acacia"
+                }
+            },
+            "dark_oak": {
+                "textures": {
+                    "all": "blocks/planks_big_oak"
+                }
+            }
+        }
+    }
+}

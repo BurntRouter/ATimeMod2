@@ -11,11 +11,11 @@ import com.router1011.atimemod2.render.living.RenderLich;
 import com.router1011.atimemod2.render.living.RenderMarceline;
 import com.router1011.atimemod2.render.living.RenderNEPTR;
 import com.router1011.atimemod2.render.living.RenderPB;
+import com.router1011.atimemod2.lazymodder.entity.EasyLivingEntity;
+import com.router1011.atimemod2.lazymodder.registry.EasyRegistry;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import zdoctor.lazymodder.easy.entity.living.EasyLivingEntity;
-import zdoctor.lazymodder.easy.registry.EasyRegistry;
 
 public class ATimeLivingEntities {
 
@@ -50,19 +50,20 @@ public class ATimeLivingEntities {
 		// "TreeTrunks", 0, 0);
 	}
 
-	@SideOnly(Side.CLIENT)
+@SideOnly(Side.CLIENT)
 	public static void registerRenders() {
-		EasyRegistry.registerLivingEntityRenderer(finn, RenderFinn.class);
-		EasyRegistry.registerLivingEntityRenderer(jake, RenderJake.class);
-		EasyRegistry.registerLivingEntityRenderer(bmo, RenderBMO.class);
-		EasyRegistry.registerLivingEntityRenderer(pb, RenderPB.class);
-		EasyRegistry.registerLivingEntityRenderer(fp, RenderFP.class);
-		EasyRegistry.registerLivingEntityRenderer(billy, RenderBilly.class);
-		EasyRegistry.registerLivingEntityRenderer(gunter, RenderGunter.class);
-		EasyRegistry.registerLivingEntityRenderer(iceKing, RenderIceKing.class);
-		EasyRegistry.registerLivingEntityRenderer(lich, RenderLich.class);
-		EasyRegistry.registerLivingEntityRenderer(marceline, RenderMarceline.class);
-		EasyRegistry.registerLivingEntityRenderer(neptr, RenderNEPTR.class);
+		EasyRegistry.register(RenderFinn.class);
+		EasyRegistry.register(RenderJake.class);
+		EasyRegistry.register(RenderBMO.class);
+		EasyRegistry.register(RenderPB.class);
+		EasyRegistry.register(RenderFP.class);
+		EasyRegistry.register(RenderBilly.class);
+		EasyRegistry.register(RenderGunter.class);
+		EasyRegistry.register(RenderIceKing.class);
+		EasyRegistry.register(RenderLich.class);
+		EasyRegistry.register(RenderMarceline.class);
+		EasyRegistry.register(RenderNEPTR.class);
 	}
+
 
 }

@@ -1,6 +1,6 @@
 package com.router1011.atimemod2.gui;
 
-import zdoctor.lazymodder.client.gui.EasyGuiHandler;
+import com.router1011.atimemod2.lazymodder.gui.EasyGuiHandler;
 
 public class ATimeGuis {
 

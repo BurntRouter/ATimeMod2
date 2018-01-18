@@ -1,0 +1,10 @@
+{
+    "overrides": [
+        {"predicate":{"meta": 0},  "model":"block/half_slab_oak"},
+        {"predicate":{"meta": 1},  "model":"block/half_slab_spruce"},
+        {"predicate":{"meta": 2},  "model":"block/half_slab_birch"},
+        {"predicate":{"meta": 3},  "model":"block/half_slab_jungle"},
+        {"predicate":{"meta": 4},  "model":"block/half_slab_acacia"},
+        {"predicate":{"meta": 5},  "model":"block/half_slab_dark_oak"}
+    ]
+}

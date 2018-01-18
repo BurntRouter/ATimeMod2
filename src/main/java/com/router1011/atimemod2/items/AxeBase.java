@@ -1,9 +1,9 @@
 package com.router1011.atimemod2.items;
 
 import com.router1011.atimemod2.ATimeMod;
+import com.router1011.atimemod2.lazymodder.item.EasyItemAxe;
 
 import net.minecraft.item.Item.ToolMaterial;
-import zdoctor.lazymodder.easy.items.EasyItemAxe;
 
 public class AxeBase extends EasyItemAxe {
 

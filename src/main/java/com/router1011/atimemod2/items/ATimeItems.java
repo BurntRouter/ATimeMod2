@@ -3,9 +3,6 @@ package com.router1011.atimemod2.items;
 import com.router1011.atimemod2.ATimeMod;
 
 import net.minecraft.item.Item;
-import zdoctor.lazymodder.easy.items.EasyArmor;
-import zdoctor.lazymodder.easy.items.EasyItemTool;
-import zdoctor.lazymodder.easy.items.EasyItemTool.*;
 
 public class ATimeItems {
 	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard, SteelIngot;

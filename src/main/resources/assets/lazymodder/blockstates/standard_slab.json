@@ -1,0 +1,57 @@
+{
+    "forge_marker": 1,
+    "variants": {
+        "half": {
+            "bottom": {
+                "model": "half_slab"
+            },
+            "top": {
+                "model": "upper_slab"
+            }
+        },
+        "variant": {
+            "oak": {
+                "textures": {
+                    "bottom": "blocks/planks_oak",
+                    "top": "blocks/planks_oak",
+                    "side": "blocks/planks_oak"
+                }
+            },
+            "spruce": {
+                "textures": {
+                    "bottom": "blocks/planks_spruce",
+                    "top": "blocks/planks_spruce",
+                    "side": "blocks/planks_spruce"
+                }
+            },
+            "birch": {
+                "textures": {
+                    "bottom": "blocks/planks_birch",
+                    "top": "blocks/planks_birch",
+                    "side": "blocks/planks_birch"
+                }
+            },
+            "jungle": {
+                "textures": {
+                    "bottom": "blocks/planks_jungle",
+                    "top": "blocks/planks_jungle",
+                    "side": "blocks/planks_jungle"
+                }
+            },
+            "acacia": {
+                "textures": {
+                    "bottom": "blocks/planks_acacia",
+                    "top": "blocks/planks_acacia",
+                    "side": "blocks/planks_acacia"
+                }
+            },
+            "dark_oak": {
+                "textures": {
+                    "bottom": "blocks/planks_big_oak",
+                    "top": "blocks/planks_big_oak",
+                    "side": "blocks/planks_big_oak"
+                }
+            }
+        }
+    }
+}

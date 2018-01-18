@@ -1,9 +1,9 @@
 package com.router1011.atimemod2.items;
 
 import com.router1011.atimemod2.ATimeMod;
+import com.router1011.atimemod2.lazymodder.item.EasyArmor;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
-import zdoctor.lazymodder.easy.items.EasyArmor;
 
 public class ArmorBase extends EasyArmor {
 

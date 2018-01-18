@@ -10,7 +10,7 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-import zdoctor.lazymodder.builtin.helpers.TextureLocation.EntityTextureLocation;
+import com.router1011.atimemod2.lazymodder.helpers.TextureLocation.EntityTextureLocation;
 
 @SideOnly(Side.CLIENT)
 public class RenderPB extends RenderLiving {

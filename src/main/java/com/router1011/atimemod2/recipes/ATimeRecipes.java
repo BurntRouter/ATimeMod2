@@ -1,12 +1,12 @@
 package com.router1011.atimemod2.recipes;
 
 import com.router1011.atimemod2.items.ATimeItems;
+import com.router1011.atimemod2.lazymodder.builders.RecipeBuilder;
+import com.router1011.atimemod2.lazymodder.registry.EasyRegistry;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import zdoctor.lazymodder.easy.builders.RecipeBuilder;
-import zdoctor.lazymodder.easy.registry.EasyRegistry;
 
 public class ATimeRecipes {
 	public static ItemStack ingotSteel = new ItemStack(ATimeItems.SteelIngot);

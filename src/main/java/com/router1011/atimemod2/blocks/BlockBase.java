@@ -1,9 +1,9 @@
 package com.router1011.atimemod2.blocks;
 
 import com.router1011.atimemod2.ATimeMod;
+import com.router1011.atimemod2.lazymodder.blocks.EasyBlock;
 
 import net.minecraft.block.material.Material;
-import zdoctor.lazymodder.easy.blocks.EasyBlock;
 
 public class BlockBase extends EasyBlock {
 
