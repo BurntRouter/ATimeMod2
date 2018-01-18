@@ -2,8 +2,13 @@
 	"modid": "atimemod2",
 	"name": "AdventureTime Mod 2",
 	"description": "The new and improved AdventureTime Mod! Add your favorite charters to Minecraft!",
+<<<<<<< HEAD
 	"version": "0.5",
 	"mcversion": "1.12.2",
+=======
+	"version": "0.2.2",
+	"mcversion": "1.12.1",
+>>>>>>> 24d8763936e2c1a3b74ab23d2a31d0bddb73d488
 	"authorList": ["Router1011", "Z_Doctor"],
 	"credits": "Cartoon Network (Don't sue me)",
 	"logoFile": "logo.png"

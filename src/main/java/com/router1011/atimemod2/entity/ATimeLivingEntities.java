@@ -1,5 +1,6 @@
 package com.router1011.atimemod2.entity;
 
+<<<<<<< HEAD
 import com.router1011.atimemod2.render.living.RenderBMO;
 import com.router1011.atimemod2.render.living.RenderBilly;
 import com.router1011.atimemod2.render.living.RenderFP;
@@ -16,22 +17,26 @@ import com.router1011.atimemod2.lazymodder.registry.EasyRegistry;
 
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
+=======
+import zdoctor.lazymodder.easy.entity.living.EasyEntityLiving;
+>>>>>>> 24d8763936e2c1a3b74ab23d2a31d0bddb73d488
 
 public class ATimeLivingEntities {
 
-	private static EasyLivingEntity finn;
-	private static EasyLivingEntity jake;
-	private static EasyLivingEntity bmo;
-	private static EasyLivingEntity pb;
-	private static EasyLivingEntity fp;
-	private static EasyLivingEntity billy;
-	private static EasyLivingEntity gunter;
-	private static EasyLivingEntity iceKing;
-	private static EasyLivingEntity lich;
-	private static EasyLivingEntity marceline;
-	private static EasyLivingEntity neptr;
+	private static EasyEntityLiving finn;
+	private static EasyEntityLiving jake;
+	private static EasyEntityLiving bmo;
+	private static EasyEntityLiving pb;
+	private static EasyEntityLiving fp;
+	private static EasyEntityLiving billy;
+	private static EasyEntityLiving gunter;
+	private static EasyEntityLiving iceKing;
+	private static EasyEntityLiving lich;
+	private static EasyEntityLiving marceline;
+	private static EasyEntityLiving neptr;
 
 	public static void initLivingEntites() {
+<<<<<<< HEAD
 		finn = new EasyLivingEntity(EntityFinn.class, "Finn", 0, 0);
 		jake = new EasyLivingEntity(EntityJake.class, "Jake", 0, 0);
 		bmo = new EasyLivingEntity(EntityBMO.class, "BMO", 0, 0);
@@ -63,6 +68,19 @@ public class ATimeLivingEntities {
 		EasyRegistry.register(RenderLich.class);
 		EasyRegistry.register(RenderMarceline.class);
 		EasyRegistry.register(RenderNEPTR.class);
+=======
+		finn = new EasyEntityLiving("Finn", EntityFinn.class, 0, 0);
+		jake = new EasyEntityLiving("Jake", EntityJake.class, 0, 0);
+		bmo = new EasyEntityLiving("BMO", EntityBMO.class, 0, 0);
+		pb = new EasyEntityLiving("PB", EntityPB.class, 0, 0);
+		fp = new EasyEntityLiving("FP", EntityFP.class, 0, 0);
+		billy = new EasyEntityLiving("Billy", EntityBilly.class, 0, 0);
+		gunter = new EasyEntityLiving("Gunter", EntityGunter.class, 0, 0);
+		iceKing = new EasyEntityLiving("IceKing", EntityIceKing.class, 0, 0);
+		lich = new EasyEntityLiving("Lich", EntityLich.class, 0, 0);
+		marceline = new EasyEntityLiving("Marceline", EntityMarceline.class, 0, 0);
+		neptr = new EasyEntityLiving("NEPTR", EntityNEPTR.class, 0, 0);
+>>>>>>> 24d8763936e2c1a3b74ab23d2a31d0bddb73d488
 	}
 
 
