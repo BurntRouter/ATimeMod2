@@ -45,7 +45,7 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
-import zdoctor.lazymodder.easy.interfaces.IRenderLiving;
+import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
 
 public class EntityFinn extends EntityCreature implements IRenderLiving {
 	private int conversionTime = 0;

@@ -16,7 +16,7 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
-import zdoctor.lazymodder.easy.interfaces.IRenderLiving;
+import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
 
 public class EntityLich extends EntityCreature implements IRenderLiving {
 	private int conversionTime = 0;

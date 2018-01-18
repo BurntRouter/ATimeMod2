@@ -1,5 +1,6 @@
 package com.router1011.atimemod2.entity;
 
+import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
 import com.router1011.atimemod2.render.living.RenderBilly;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -16,7 +17,6 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
-import zdoctor.lazymodder.easy.interfaces.IRenderLiving;
 
 public class EntityBilly extends EntityCreature implements IRenderLiving {
 	private int conversionTime = 0;
