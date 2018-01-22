@@ -16,19 +16,19 @@ import net.minecraftforge.oredict.OreDictionary;
 public class CommonProxy {
 
 	public void preInit(FMLPreInitializationEvent e) {
+//		ATimeGuis.initGuis();
+//		ATimeLivingEntities.initLivingEntites();
 		ATimeBlocks.initBlocks();
 		ATimeItems.initItems();
-		ATimeGuis.initGuis();
-		ATimeLivingEntities.initLivingEntites();
-		ATimeRecipes.preInit();
 	}
 
 	public void init(FMLInitializationEvent e) {
-		OreDictionary.registerOre("ingotSteel", ATimeItems.SteelIngot);
-		GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);
+
+//		GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);
 	}
 
 	public void postInit(FMLPostInitializationEvent e) {
+		OreDictionary.registerOre("ingotSteel", ATimeItems.SteelIngot);
 
 	}
 
