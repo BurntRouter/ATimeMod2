@@ -1,16 +1,21 @@
 package com.router1011.atimemod2.blocks;
 
+import com.router1011.atimemod2.ATimeMod;
+import com.router1011.atimemod2.lazymodder.blocks.EasyBlock;
+
+import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
 public class ATimeBlocks {
 
-	public static BlockBase CrystalBlock, CrystalOre, DemonicOre, SteelOre;
+	public static Block CrystalBlock;
+	public static EasyBlock CrystalOre, DemonicOre, SteelOre;
 
 	public static void initBlocks() {
-		CrystalBlock = new BlockBase("CrystalBlock", Material.GLASS);
-		CrystalOre = new CrystalOre("CrystalOre", Material.GLASS);
-		DemonicOre = new DemonicOre("DemonicOre", Material.GLASS);
-		SteelOre = new SteelOre("SteelOre", Material.GLASS);
+		CrystalBlock = new Block(Material.GLASS).setCreativeTab(ATimeMod.creativeTab).setUnlocalizedName("CrystalBlock").setRegistryName("CrystalBlock");
+		CrystalOre = new EasyBlock("CrystalOre", Material.GLASS);
+		DemonicOre = new EasyBlock("DemonicOre", Material.GLASS);
+		SteelOre = new EasyBlock("SteelOre", Material.GLASS);
 
 	}
 }

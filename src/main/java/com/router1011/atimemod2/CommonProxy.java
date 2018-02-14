@@ -20,6 +20,8 @@ public class CommonProxy {
 //		ATimeLivingEntities.initLivingEntites();
 		ATimeBlocks.initBlocks();
 		ATimeItems.initItems();
+		ATimeRegistry.regBlocks();
+		ATimeRegistry.regItems();
 	}
 
 	public void init(FMLInitializationEvent e) {
