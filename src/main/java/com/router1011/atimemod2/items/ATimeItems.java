@@ -5,7 +5,9 @@ import com.router1011.atimemod2.ATimeMod;
 import net.minecraft.item.Item;
 
 public class ATimeItems {
-	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard, SteelIngot;
+	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard;
+
+	public static Item SteelIngot;
 
 	public static ArmorBase JakeBoots, JakeChest, JakeHead, JakeLegs;
 	
@@ -52,8 +54,8 @@ public class ATimeItems {
 		Lollipop = new FoodBase("Lollipop", 1, 1F, false);
 		Pancake = new FoodBase("Pancake", 14, 7F, false);
 		SteelIngot = new ItemBase("SteelIngot");
-		// These too. Why were they null?
-		// Swords
+
+		//Swords
 		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
 		FourDSword = new SwordBase("FourDSword", ATimeMod.FOURD);
 		PaperSword = new SwordBase("PaperSword", Item.ToolMaterial.IRON);

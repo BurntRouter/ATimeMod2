@@ -5,8 +5,6 @@ import net.minecraft.client.model.ModelRenderer;
 import net.minecraft.entity.Entity;
 
 public class ModelBilly extends ModelBase {
-	ModelRenderer feet1;
-	ModelRenderer feet2;
 	ModelRenderer leg1;
 	ModelRenderer leg2;
 	ModelRenderer crouch;
@@ -42,22 +40,9 @@ public class ModelBilly extends ModelBase {
 	ModelRenderer Billys_ring3;
 
 	public ModelBilly() {
-
 		this.textureWidth = 128;
 		this.textureHeight = 256;
-		this.feet1 = new ModelRenderer(this, 100, 100);
-		this.feet1.addBox(0.0F, 0.0F, 0.0F, 2, 1, 6);
-		this.feet1.setRotationPoint(-5.0F, 3.0F, 0.0F);
-		this.feet1.setTextureSize(128, 256);
-		this.feet1.mirror = true;
-		this.setRotation(this.feet1, 0.0F, 0.0F, 0.0F);
-		this.feet2 = new ModelRenderer(this, 100, 100);
-		this.feet2.addBox(0.0F, 0.0F, 0.0F, 2, 1, 6);
-		this.feet2.setRotationPoint(3.0F, 3.0F, 0.0F);
-		this.feet2.setTextureSize(128, 256);
-		this.feet2.mirror = true;
-		this.setRotation(this.feet2, 0.0F, 0.0F, 0.0F);
-
+		
 		this.leg1 = new ModelRenderer(this, 90, 0);
 		this.leg1.addBox(0.0F, 0.0F, 0.0F, 2, 20, 2);
 		this.leg1.setRotationPoint(-5.0F, 3.0F, 0.0F);
@@ -264,10 +249,7 @@ public class ModelBilly extends ModelBase {
 	public void render(Entity entity, float f, float f1, float f2, float f3, float f4, float f5) {
 		super.render(entity, f, f1, f2, f3, f4, f5);
 		this.setRotationAngles(f, f1, f2, f3, f4, f5);
-
-		this.feet1.render(f5);
-		this.feet2.render(f5);
-
+		
 		this.leg1.render(f5);
 		this.leg2.render(f5);
 		this.crouch.render(f5);

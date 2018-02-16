@@ -12,17 +12,22 @@ import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
+@SideOnly(Side.CLIENT)
 public class ClientProxy extends CommonProxy {
 
 	 public void registerItemRenderer(Item item, int meta, String id) {
 	 ModelLoader.setCustomModelResourceLocation(item, meta, new
 	 ModelResourceLocation(ATimeMod.MODID + ":" + id, "inventory"));
 	 }
+	 
 	@Override
 	public void preInit(FMLPreInitializationEvent e) {
+		ATimeLivingEntities.initModel();	
 		super.preInit(e);
-		ATimeLivingEntities.registerRenders();	}
+	}
 
 	@Override
 	public void init(FMLInitializationEvent e) {
@@ -32,12 +37,5 @@ public class ClientProxy extends CommonProxy {
 	@Override
 	public void postInit(FMLPostInitializationEvent e) {
 		super.postInit(e);
-	}
-
-	public static void registerEntityRenderers() {
-		 RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class,
-		 (RenderManager manager) -> new RenderFinn(manager));
-		 RenderingRegistry.registerEntityRenderingHandler(EntityFinn.class,
-		 RenderFinn::new);
 	}
 }

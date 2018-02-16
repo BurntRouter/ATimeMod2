@@ -3,6 +3,7 @@ package com.router1011.atimemod2;
 import com.router1011.atimemod2.items.ATimeItems;
 
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 public class ATimeTab extends CreativeTabs {
@@ -13,7 +14,7 @@ public class ATimeTab extends CreativeTabs {
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(ATimeItems.Scarlet);
+		return new ItemStack(Items.APPLE);
 	}
 
 	@Override

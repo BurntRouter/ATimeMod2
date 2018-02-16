@@ -1,5 +1,8 @@
 package com.router1011.atimemod2.entity;
 
+import javax.annotation.Nullable;
+
+import com.router1011.atimemod2.ATimeMod;
 import com.router1011.atimemod2.items.ATimeItems;
 import com.router1011.atimemod2.render.living.RenderFinn;
 
@@ -42,18 +45,25 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.DamageSource;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.World;
-import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
 
-public class EntityFinn extends EntityCreature implements IRenderLiving {
+public class EntityFinn extends EntityCreature {
 	private int conversionTime = 0;
 	public String npcName;
+	public static final ResourceLocation LOOT = new ResourceLocation(ATimeMod.MODID, "finn");
 
-	public EntityFinn(World var1) {
-		super(var1);
+	public EntityFinn(World worldIn) {
+		super(worldIn);
+		setSize(0.65F, 2.0F);
 	}
+	
+    @Override
+    protected void entityInit() {
+        super.entityInit();
+        }
 
 	@Override
 	protected void initEntityAI() {
@@ -79,11 +89,7 @@ public class EntityFinn extends EntityCreature implements IRenderLiving {
 	}
 
 	protected void applyEntityAI() {
-
-		// TODO Make it so Finn can call his friends for help with fighting or
-		// something
-		// this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true, new
-		// Class[] {}));
+		this.targetTasks.addTask(1, new EntityAIHurtByTarget(this, true, new Class[] {}));
 		this.targetTasks.addTask(1, new EntityAIAttackMelee(this, 1.0D, true));
 		this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntitySkeleton.class, true));
 		this.targetTasks.addTask(3, new EntityAINearestAttackableTarget(this, EntityZombie.class, true));
@@ -121,11 +127,6 @@ public class EntityFinn extends EntityCreature implements IRenderLiving {
 	}
 
 	@Override
-	public Class<? extends RenderLiving> getLivingRenderer() {
-		return RenderFinn.class;
-	}
-
-	@Override
 	protected SoundEvent getHurtSound(DamageSource p_184601_1_) {
 		// TODO Auto-generated method stub
 		return super.getHurtSound(p_184601_1_);
@@ -136,19 +137,24 @@ public class EntityFinn extends EntityCreature implements IRenderLiving {
 		return null;
 	}
 
-	/**
-	 * Plays step sound at given x, y, z for the entity
-	 */
 	protected void playStepSound(int var1, int var2, int var3, int var4) {
 		// TODO add some type of step sound i guess
 		this.playSound(null, 1, 1);
 	}
 
-	/**
-	 * Returns the sound this mob makes while it's alive.
-	 */
 	protected String getLivingSound() {
 		return null;
 	}
+	
+    @Override
+    @Nullable
+    protected ResourceLocation getLootTable() {
+        return LOOT;
+    }
+    
+    @Override
+    public int getMaxSpawnedInChunk() {
+    	return 1;
+    }
 
 }

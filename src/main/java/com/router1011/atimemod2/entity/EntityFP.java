@@ -16,9 +16,8 @@ import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
-import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
 
-public class EntityFP extends EntityCreature implements IRenderLiving {
+public class EntityFP extends EntityCreature {
 	private int conversionTime = 0;
 	public String npcName;
 
@@ -116,10 +115,4 @@ public class EntityFP extends EntityCreature implements IRenderLiving {
 	protected void playStepSound(int var1, int var2, int var3, int var4) {
 		this.playSound(null, 1, 1);
 	}
-
-	@Override
-	public Class<? extends RenderLiving> getLivingRenderer() {
-		return RenderFP.class;
-	}
-
 }

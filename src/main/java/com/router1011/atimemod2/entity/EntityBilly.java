@@ -1,6 +1,8 @@
 package com.router1011.atimemod2.entity;
 
-import com.router1011.atimemod2.lazymodder.interfaces.IRenderLiving;
+import javax.annotation.Nullable;
+
+import com.router1011.atimemod2.ATimeMod;
 import com.router1011.atimemod2.render.living.RenderBilly;
 
 import net.minecraft.client.renderer.entity.RenderLiving;
@@ -15,12 +17,15 @@ import net.minecraft.entity.ai.EntityAIRestrictOpenDoor;
 import net.minecraft.entity.ai.EntityAIWander;
 import net.minecraft.entity.ai.EntityAIWatchClosest;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
-public class EntityBilly extends EntityCreature implements IRenderLiving {
+public class EntityBilly extends EntityCreature {
 	private int conversionTime = 0;
 	public String npcName;
+	public static final ResourceLocation LOOT = new ResourceLocation(ATimeMod.MODID, "billy");
+
 
 	public EntityBilly(World var1) {
 		super(var1);
@@ -116,10 +121,10 @@ public class EntityBilly extends EntityCreature implements IRenderLiving {
 	protected void playStepSound(int var1, int var2, int var3, int var4) {
 		this.playSound(null, 1, 1);
 	}
-
-	@Override
-	public Class<? extends RenderLiving> getLivingRenderer() {
-		return RenderBilly.class;
-	}
-
+	
+    @Override
+    @Nullable
+    protected ResourceLocation getLootTable() {
+        return LOOT;
+    }
 }

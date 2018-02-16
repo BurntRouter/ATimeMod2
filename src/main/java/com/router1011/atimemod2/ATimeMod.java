@@ -1,5 +1,7 @@
 package com.router1011.atimemod2;
 
+import org.apache.logging.log4j.Logger;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.util.SoundEvent;
@@ -12,7 +14,7 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]")
+@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]", useMetadata = true)
 public class ATimeMod {
 
 	@SidedProxy(clientSide = "com.router1011.atimemod2.ClientProxy", serverSide = "com.router1011.atimemod2.CommonProxy")
@@ -27,22 +29,25 @@ public class ATimeMod {
 	public static final Item.ToolMaterial SCARLET = EnumHelper.addToolMaterial("SCARLET", 0, 3000, 10.0F, 10.0F, 25);
 	public static final Item.ToolMaterial GRASS = EnumHelper.addToolMaterial("GRASS", 0, 58, 10.0F, 4.0F, 0);
 
-	@Instance(MODID)
+	@Mod.Instance(MODID)
 	public static ATimeMod instance;
+	
+	public static Logger logger;
 
-	@EventHandler
+	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
+		logger = event.getModLog();
 		proxy.preInit(event);
 		System.out.println("[ATimeMod2] We're back boys.");
 	}
 
-	@EventHandler
+	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
 		System.out.println("[ATimeMod2] Loaded and registered everything successfully!");
 	}
 
-	@EventHandler
+	@Mod.EventHandler
 	public void postInit(FMLPostInitializationEvent event) {
 		proxy.postInit(event);
 	}
