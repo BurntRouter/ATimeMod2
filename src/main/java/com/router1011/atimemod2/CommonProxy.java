@@ -23,6 +23,7 @@ public class CommonProxy {
 	@SubscribeEvent
 	public void preInit(FMLPreInitializationEvent e) {
 		ATimeLivingEntities.initEntity();
+		
 	}
 
 	@SubscribeEvent
