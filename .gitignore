@@ -5,12 +5,10 @@ bin
 .classpath
 .project
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
+#eclipse
+eclipse/.recommenders
+eclipse/.recommenders/*
+.recommenders/
 
 # gradle
 build
