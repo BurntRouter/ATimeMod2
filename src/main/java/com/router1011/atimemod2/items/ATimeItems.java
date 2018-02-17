@@ -3,11 +3,18 @@ package com.router1011.atimemod2.items;
 import com.router1011.atimemod2.ATimeMod;
 
 import net.minecraft.item.Item;
+import net.minecraftforge.registries.IForgeRegistry;
 
 public class ATimeItems {
-	public static ItemBase BassAxe, BillyGauntlet, CrystalGem, DemonBlood, DemonIngot, Enchiridion, Flour, IceShard;
 
-	public static Item SteelIngot;
+	public static ItemBase billy_gauntlet = new ItemBase("billy_gauntlet");
+	public static ItemBase crystal_gem = new ItemBase("crystal_gem");
+	public static ItemBase demon_blood = new ItemBase("demon_blood");
+	public static ItemBase demon_ingot = new ItemBase("demon_ingot");
+	public static ItemBase enchiridion_item = new ItemEnchiridion("enchiridion_item");
+	public static ItemBase flour = new ItemBase("flour");
+	public static ItemBase ice_shard = new ItemBase("ice_shard");
+	public static ItemBase steel_ingot = new ItemBase("steel_ingot");
 
 	public static ArmorBase JakeBoots, JakeChest, JakeHead, JakeLegs;
 	
@@ -23,46 +30,28 @@ public class ATimeItems {
 
 	public static SwordBase CrystalSword, DemonSword, FourDSword, GrassSword, JakeSword, Scarlet, PaperSword, RootSword;
 
-	public static void initItems() {
-
-		// ApplePie = new ItemBase("ApplePie");
-		Bacon = new FoodBase("Bacon", 6, 6F, true);
-		BaconPancake = new FoodBase("BaconPancake", 16, 7F, false);
-		BassAxe = new ItemBase("BassAxe");
-		BillyGauntlet = new ItemBase("BillyGauntlet");
-		BubbleGum = new FoodBase("BubbleGum", 1, 1F, false);
-		Candy = new FoodBase("Candy", 2, 2F, false);
-		CottonCandy = new FoodBase("CottonCandy", 2, 2F, false);
-		CrystalAxe = new AxeBase("CrystalAxe", ATimeMod.CRYSTAL);
-		CrystalGem = new ItemBase("CrystalGem");
-		CrystalHoe = new HoeBase("CrystalHoe", ATimeMod.CRYSTAL);
-		CrystalPickaxe = new PickaxeBase("CrystalPickaxe", ATimeMod.CRYSTAL);
-		CrystalShovel = new ShovelBase("CrystalShovel", ATimeMod.CRYSTAL);
-		DemonBlood = new ItemBase("DemonBlood");
-		DemonIngot = new ItemBase("DemonIngot");
-		Donut = new FoodBase("Donut", 4, 6F, false);
-		Enchiridion = new ItemEnchiridion("Enchiridion");
-		EverythingBurrito = new FoodBase("EverythingBurrito", 16, 8F, false);
-		Flour = new ItemBase("Flour");
-		GemApple = new FoodBase("GemApple", 20, 20F, false);
-		GrassSword = new SwordBase("GrassSword", ATimeMod.GRASS);
-		IceShard = new ItemBase("IceShard");
-//		JakeBoots = new ArmorBase("JakeBoots", null, 0, null);
-//		JakeChest = new ArmorBase("JakeChest", null, 0, null);
-//		JakeHead = new ArmorBase("JakeHead", null, 0, null);
-//		JakeLegs = new ArmorBase("JakeLegs", null, 0, null);
-		Lollipop = new FoodBase("Lollipop", 1, 1F, false);
-		Pancake = new FoodBase("Pancake", 14, 7F, false);
-		SteelIngot = new ItemBase("SteelIngot");
-
-		//Swords
-		CrystalSword = new SwordBase("CrystalSword", ATimeMod.CRYSTAL);
-		FourDSword = new SwordBase("FourDSword", ATimeMod.FOURD);
-		PaperSword = new SwordBase("PaperSword", Item.ToolMaterial.IRON);
-		RootSword = new SwordBase("RootSword", Item.ToolMaterial.IRON);
-		Scarlet = new SwordBase("Scarlet", ATimeMod.SCARLET);
-		JakeSword = new SwordBase("JakeSword", ATimeMod.SCARLET);
-		DemonSword = new SwordBase("DemonSword", Item.ToolMaterial.IRON);
+	public static void registerItems(IForgeRegistry<Item> registry) {
+		registry.registerAll(
+				billy_gauntlet, 
+				crystal_gem, 
+				demon_blood, 
+				demon_ingot, 
+				enchiridion_item, 
+				flour, 
+				ice_shard, 
+				steel_ingot
+		);
+	}
+	
+	public static void registerItemModels() {
+		billy_gauntlet.registerItemModel();
+		crystal_gem.registerItemModel();
+		demon_blood.registerItemModel();
+		demon_ingot.registerItemModel();
+		enchiridion_item.registerItemModel();
+		flour.registerItemModel();
+		ice_shard.registerItemModel();
+		steel_ingot.registerItemModel();
 	};
 
 }

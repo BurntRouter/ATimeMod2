@@ -20,7 +20,7 @@ public class CrystalOre extends Block {
 	}
 
 	public Item getItemDropped(int metadata, Random random, int fortune) {
-		return ATimeItems.CrystalGem;
+		return ATimeItems.crystal_gem;
 	}
 
 }

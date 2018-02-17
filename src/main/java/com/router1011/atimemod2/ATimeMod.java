@@ -2,10 +2,14 @@ package com.router1011.atimemod2;
 
 import org.apache.logging.log4j.Logger;
 
+import com.router1011.atimemod2.items.ATimeItems;
+
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.util.SoundEvent;
+import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.common.util.EnumHelper;
+import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -13,6 +17,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
 @Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]", useMetadata = true)
 public class ATimeMod {
@@ -33,6 +38,19 @@ public class ATimeMod {
 	public static ATimeMod instance;
 	
 	public static Logger logger;
+	
+	@Mod.EventBusSubscriber
+	public static class RegistrationHandler {
+		@SubscribeEvent
+		public static void registerItems(RegistryEvent.Register<Item> event) {
+			ATimeItems.registerItems(event.getRegistry());
+		}
+		
+		@SubscribeEvent
+			public static void registerItems(ModelRegistryEvent event) {
+				ATimeItems.registerItemModels();
+		}
+	}
 
 	@Mod.EventHandler
 	public void preInit(FMLPreInitializationEvent event) {
@@ -44,7 +62,7 @@ public class ATimeMod {
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
 		proxy.init(event);
-		System.out.println("[ATimeMod2] Loaded and registered everything successfully!");
+		System.out.println("[ATimeMod2] Loaded and registered everything hopefully!");
 	}
 
 	@Mod.EventHandler

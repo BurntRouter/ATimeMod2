@@ -8,6 +8,7 @@ import com.router1011.atimemod2.items.ATimeItems;
 import com.router1011.atimemod2.world.WorldOreGen;
 
 import net.minecraft.block.Block;
+import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -25,10 +26,8 @@ public class CommonProxy {
 		ATimeLivingEntities.initEntity();
 		
 	}
-
-	@SubscribeEvent
-	public static void regBlocks(RegistryEvent.Register<Block> event) {
-		event.getRegistry().register(new CrystalOre());
+	
+	public void registerItemRenderer(Item item, int meta, String id) {
 	}
 
 	public void init(FMLInitializationEvent e) {
