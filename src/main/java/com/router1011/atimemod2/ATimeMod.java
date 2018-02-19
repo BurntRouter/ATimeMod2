@@ -19,7 +19,7 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]", useMetadata = true)
+@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]", useMetadata = true, version = ATimeMod.VERSION)
 public class ATimeMod {
 
 	@SidedProxy(clientSide = "com.router1011.atimemod2.ClientProxy", serverSide = "com.router1011.atimemod2.CommonProxy")
@@ -27,6 +27,7 @@ public class ATimeMod {
 
 	public static final String MODID = "atimemod2";
 	public static final String NAME = "AdventureTime Mod 2";
+	public static final String VERSION = "2.0.7";
 
 	public static final ATimeTab creativeTab = new ATimeTab();
 	public static final Item.ToolMaterial FOURD = EnumHelper.addToolMaterial("FOURD", 0, 333, 10.0F, 16.0F, 0);
