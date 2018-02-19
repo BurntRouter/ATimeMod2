@@ -7,10 +7,17 @@ import net.minecraft.item.ItemPickaxe;
 
 public class PickaxeBase extends ItemPickaxe{
 
-	public PickaxeBase(String toolName, ToolMaterial material) {
+	protected String name;
+
+	public PickaxeBase(String name, ToolMaterial material) {
 		super(material);
 		setCreativeTab(ATimeMod.creativeTab);
+		setUnlocalizedName(name);
+		setRegistryName(name);
 	}
-
+	
+	public void registerItemModel() {
+		ATimeMod.proxy.registerItemRenderer(this, 0, name);
+	}
 
 }

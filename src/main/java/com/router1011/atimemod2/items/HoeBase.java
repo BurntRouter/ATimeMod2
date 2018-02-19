@@ -7,9 +7,17 @@ import net.minecraft.item.ItemHoe;
 
 public class HoeBase extends ItemHoe{
 
-	public HoeBase(String toolName, ToolMaterial material) {
+	protected String name;
+
+	public HoeBase(String name, ToolMaterial material) {
 		super(material);
 		setCreativeTab(ATimeMod.creativeTab);
+		setUnlocalizedName(name);
+		setRegistryName(name);
+	}
+	
+	public void registerItemModel() {
+		ATimeMod.proxy.registerItemRenderer(this, 0, name);
 	}
 
 }

@@ -7,9 +7,17 @@ import net.minecraft.item.ItemAxe;
 
 public class AxeBase extends ItemAxe{
 
-	public AxeBase(String toolName, ToolMaterial material) {
+	protected String name;
+
+	public AxeBase(String name, ToolMaterial material) {
 		super(material);
 		setCreativeTab(ATimeMod.creativeTab);
+		setUnlocalizedName(name);
+		setRegistryName(name);
 	}
 	
+	public void registerItemModel() {
+		ATimeMod.proxy.registerItemRenderer(this, 0, name);
+	}
+
 }

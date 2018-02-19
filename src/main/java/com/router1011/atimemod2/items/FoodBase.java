@@ -11,12 +11,12 @@ public class FoodBase extends ItemFood {
 	public FoodBase(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
 		setCreativeTab(ATimeMod.creativeTab);
+		setUnlocalizedName(name);
+		setRegistryName(name);
 	}
-
-	@Override
-	public FoodBase setCreativeTab(CreativeTabs tab) {
-		super.setCreativeTab(tab);
-		return this;
+	
+	public void registerItemModel() {
+		ATimeMod.proxy.registerItemRenderer(this, 0, name);
 	}
 
 }

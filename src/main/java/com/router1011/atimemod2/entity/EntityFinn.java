@@ -99,7 +99,7 @@ public class EntityFinn extends EntityCreature {
 	protected void setEquipmentBasedOnDifficulty(DifficultyInstance difficulty) {
 		// TODO Determine if he should spawn with gear
 		// super.setEquipmentBasedOnDifficulty(difficulty);
-		ItemStack weapon = new ItemStack(ATimeItems.Scarlet);
+		ItemStack weapon = new ItemStack(ATimeItems.scarlet);
 		
 		
 		this.setItemStackToSlot(EntityEquipmentSlot.MAINHAND, weapon);

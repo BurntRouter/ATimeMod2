@@ -14,7 +14,7 @@ public class ATimeTab extends CreativeTabs {
 
 	@Override
 	public ItemStack getTabIconItem() {
-		return new ItemStack(Items.APPLE);
+		return new ItemStack(ATimeItems.scarlet);
 	}
 
 	@Override
