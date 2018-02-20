@@ -1,6 +1,6 @@
 { 
  "parent": "item/generated",
     "textures": {
-        "layer0": "atimemod2:items/grasssword"
+        "layer0": "atimemod2:items/grass_sword"
     }
 }

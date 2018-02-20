@@ -1,5 +1,5 @@
 {
-    "parent":"atimemod2:block/crystalore",
+    "parent":"atimemod2:block/crystal_ore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

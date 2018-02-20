@@ -16,6 +16,7 @@ public class SwordBase extends ItemSword {
 
 	public SwordBase(String name, ToolMaterial material) {
 		super(material);
+		this.name = name;
 		setCreativeTab(ATimeMod.creativeTab);
 		setUnlocalizedName(name);
 		setRegistryName(name);

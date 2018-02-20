@@ -1,6 +1,6 @@
 { 
  "parent": "item/generated",
     "textures": {
-        "layer0": "atimemod2:items/bassaxe"
+        "layer0": "atimemod2:items/bass_axe"
     }
 }

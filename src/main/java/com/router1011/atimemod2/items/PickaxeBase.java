@@ -11,6 +11,7 @@ public class PickaxeBase extends ItemPickaxe{
 
 	public PickaxeBase(String name, ToolMaterial material) {
 		super(material);
+		this.name = name;
 		setCreativeTab(ATimeMod.creativeTab);
 		setUnlocalizedName(name);
 		setRegistryName(name);

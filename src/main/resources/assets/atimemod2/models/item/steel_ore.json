@@ -1,5 +1,5 @@
 {
-    "parent":"atimemod2:block/steelore",
+    "parent":"atimemod2:block/steel_ore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],

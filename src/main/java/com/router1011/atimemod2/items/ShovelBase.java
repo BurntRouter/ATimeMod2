@@ -11,6 +11,7 @@ public class ShovelBase extends ItemSpade{
 
 	public ShovelBase(String name, ToolMaterial material) {
 		super(material);
+		this.name = name;
 		setCreativeTab(ATimeMod.creativeTab);
 		setUnlocalizedName(name);
 		setRegistryName(name);

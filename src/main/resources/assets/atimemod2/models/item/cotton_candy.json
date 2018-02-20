@@ -1,6 +1,6 @@
 { 
  "parent": "item/generated",
     "textures": {
-        "layer0": "atimemod2:items/cottoncandy"
+        "layer0": "atimemod2:items/cotton_candy"
     }
 }

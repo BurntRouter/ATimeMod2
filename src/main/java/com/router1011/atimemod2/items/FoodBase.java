@@ -10,6 +10,7 @@ public class FoodBase extends ItemFood {
 
 	public FoodBase(String name, int amount, float saturation, boolean isWolfFood) {
 		super(amount, saturation, isWolfFood);
+		this.name = name;
 		setCreativeTab(ATimeMod.creativeTab);
 		setUnlocalizedName(name);
 		setRegistryName(name);

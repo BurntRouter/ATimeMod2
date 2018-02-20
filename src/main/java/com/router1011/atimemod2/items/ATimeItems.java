@@ -4,6 +4,7 @@ import com.router1011.atimemod2.ATimeMod;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemFood;
 import net.minecraftforge.registries.IForgeRegistry;
 
 public class ATimeItems {
@@ -56,14 +57,6 @@ public class ATimeItems {
 				flour, 
 				ice_shard, 
 				steel_ingot,
-				
-				//Tools
-//				crystal_shovel,
-//				crystal_axe,
-//				crystal_hoe,
-//				crystal_pickaxe,
-				
-				//Food
 				bacon,
 				bacon_pancake,
 				bubble_gum,
@@ -74,8 +67,6 @@ public class ATimeItems {
 				gem_apple,
 				lollipop,
 				pancake,
-				
-				//Swords&Weapons
 				crystal_sword,
 				demon_sword,
 				fourd_sword,
@@ -86,7 +77,7 @@ public class ATimeItems {
 				root_sword
 		);
 	}
-	
+
 	public static void registerItemModels() {
 		//Items
 		billy_gauntlet.registerItemModel(); 

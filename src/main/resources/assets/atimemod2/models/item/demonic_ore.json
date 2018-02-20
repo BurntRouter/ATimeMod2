@@ -1,5 +1,5 @@
 {
-    "parent":"atimemod2:block/demonicore",
+    "parent":"atimemod2:block/demonic_ore",
     "display": {
         "thirdperson": {
             "rotation": [ 10, -45, 170 ],
