@@ -4,7 +4,9 @@ import com.router1011.atimemod2.entity.ATimeLivingEntities;
 import com.router1011.atimemod2.entity.EntityFinn;
 import com.router1011.atimemod2.render.living.RenderFinn;
 
+import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.client.renderer.block.statemap.IStateMapper;
 import net.minecraft.client.renderer.entity.RenderManager;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.model.ModelLoader;
@@ -19,8 +21,7 @@ public class ClientProxy extends CommonProxy {
 
 	@Override
 	public void registerItemRenderer(Item item, int meta, String id) {
-	ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ATimeMod.MODID + ":" + id, "inventory"));
-	
+		ModelLoader.setCustomModelResourceLocation(item, meta, new ModelResourceLocation(ATimeMod.MODID + ":" + id, "inventory"));
 	}
 	 
 	@Override

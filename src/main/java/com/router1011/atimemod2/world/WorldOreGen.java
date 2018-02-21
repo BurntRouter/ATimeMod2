@@ -17,9 +17,9 @@ public class WorldOreGen implements IWorldGenerator {
 	private final WorldGenMinable oreGenCrystal, oreGenDemonic, oreGenSteel;
 
 	public WorldOreGen() {
-		oreGenCrystal = new WorldGenMinable(ATimeBlocks.CrystalOre.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
-		oreGenDemonic = new WorldGenMinable(ATimeBlocks.CrystalOre.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
-		oreGenSteel = new WorldGenMinable(ATimeBlocks.CrystalOre.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
+		oreGenCrystal = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
+		oreGenDemonic = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
+		oreGenSteel = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
 	}
 
 	@SuppressWarnings("incomplete-switch")

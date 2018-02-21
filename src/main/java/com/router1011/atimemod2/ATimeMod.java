@@ -2,8 +2,10 @@ package com.router1011.atimemod2;
 
 import org.apache.logging.log4j.Logger;
 
+import com.router1011.atimemod2.blocks.ATimeBlocks;
 import com.router1011.atimemod2.items.ATimeItems;
 
+import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.util.SoundEvent;
@@ -45,11 +47,18 @@ public class ATimeMod {
 		@SubscribeEvent
 		public static void registerItems(RegistryEvent.Register<Item> event) {
 			ATimeItems.registerItems(event.getRegistry());
+			ATimeBlocks.registerItemBlocks(event.getRegistry());
 		}
 		
 		@SubscribeEvent
-			public static void registerItems(ModelRegistryEvent event) {
-				ATimeItems.registerItemModels();
+		public static void registerItemModels(ModelRegistryEvent event) {
+			ATimeItems.registerItemModels();
+			ATimeBlocks.registerModels();
+		}
+		
+		@SubscribeEvent
+		public static void registerBlocks(RegistryEvent.Register<Block> event) {
+			ATimeBlocks.register(event.getRegistry());
 		}
 	}
 

@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "atimemod2:blocks/demonicore"
+            "all": "atimemod2:blocks/steel_ore"
         }
     },
     "variants": {

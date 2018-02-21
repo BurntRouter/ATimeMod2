@@ -13,7 +13,7 @@ public class ATimeItems {
 	public static ItemBase crystal_gem = new ItemBase("crystal_gem");
 	public static ItemBase demon_blood = new ItemBase("demon_blood");
 	public static ItemBase demon_ingot = new ItemBase("demon_ingot");
-	public static ItemBase enchiridion_item = new ItemEnchiridion("enchiridion_item");
+	public static ItemBase enchiridion_item = new ItemBase("enchiridion_item");
 	public static ItemBase flour = new ItemBase("flour");
 	public static ItemBase ice_shard = new ItemBase("ice_shard");
 	public static ItemBase steel_ingot = new ItemBase("steel_ingot");

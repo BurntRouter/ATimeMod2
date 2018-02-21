@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "atimemod2:blocks/steelore"
+            "all": "atimemod2:blocks/crystal_block"
         }
     },
     "variants": {

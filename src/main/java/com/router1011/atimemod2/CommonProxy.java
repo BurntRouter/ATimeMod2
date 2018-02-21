@@ -8,6 +8,7 @@ import com.router1011.atimemod2.items.ATimeItems;
 import com.router1011.atimemod2.world.WorldOreGen;
 
 import net.minecraft.block.Block;
+import net.minecraft.client.renderer.block.statemap.IStateMapper;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -28,8 +29,9 @@ public class CommonProxy {
 	}
 	
 	public void registerItemRenderer(Item item, int meta, String id) {
+		
 	}
-
+	
 	public void init(FMLInitializationEvent e) {
 
 //		GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);

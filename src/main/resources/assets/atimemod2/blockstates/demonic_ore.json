@@ -2,7 +2,7 @@
     "forge_marker": 1,
     "defaults": {
         "textures": {
-            "all": "atimemod2:blocks/crystalore"
+            "all": "atimemod2:blocks/demonic_ore"
         }
     },
     "variants": {
