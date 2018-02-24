@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "I",
+        "I",
+        "S"
+    ],
+    "key": {
+        "I": {
+            "item": "atimemod2:steel_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "atimemod2:scarlet",
+        "count": 1
+    },
+    "group": "stuff"
+}

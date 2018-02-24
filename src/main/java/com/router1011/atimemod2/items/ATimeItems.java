@@ -57,6 +57,7 @@ public class ATimeItems {
 				flour, 
 				ice_shard, 
 				steel_ingot,
+				//Food
 				bacon,
 				bacon_pancake,
 				bubble_gum,
@@ -67,6 +68,7 @@ public class ATimeItems {
 				gem_apple,
 				lollipop,
 				pancake,
+				//Swords
 				crystal_sword,
 				demon_sword,
 				fourd_sword,

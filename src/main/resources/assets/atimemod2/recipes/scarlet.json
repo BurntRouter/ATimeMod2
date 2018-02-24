@@ -1,0 +1,27 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GIG",
+        "GIG",
+        "LSL"
+    ],
+    "key": {
+        "G": {
+            "item": "minecraft:gold_ingot"
+        },
+        "I": {
+            "item": "atimemod2:steel_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "atimemod2:scarlet",
+        "count": 1
+    },
+    "group": "stuff"
+}
