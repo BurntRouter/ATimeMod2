@@ -20,6 +20,7 @@ public class SwordBase extends ItemSword {
 		setCreativeTab(ATimeMod.creativeTab);
 		setUnlocalizedName(name);
 		setRegistryName(name);
+		setMaxStackSize(1);
 	}
 	
 	public void registerItemModel() {
