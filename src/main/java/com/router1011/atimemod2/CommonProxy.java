@@ -24,8 +24,7 @@ public class CommonProxy {
 	
 	@SubscribeEvent
 	public void preInit(FMLPreInitializationEvent e) {
-		ATimeLivingEntities.initEntity();
-		
+		ATimeLivingEntities.initEntity();	
 	}
 	
 	public void registerItemRenderer(Item item, int meta, String id) {
@@ -33,13 +32,11 @@ public class CommonProxy {
 	}
 	
 	public void init(FMLInitializationEvent e) {
-
-//		GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);
+		GameRegistry.registerWorldGenerator(new WorldOreGen(), 0);
 	}
 
 	public void postInit(FMLPostInitializationEvent e) {
-	//	OreDictionary.registerOre("ingotSteel", ATimeItems.SteelIngot);
-
+		OreDictionary.registerOre("ingotSteel", ATimeItems.steel_ingot);
 	}
 
 }

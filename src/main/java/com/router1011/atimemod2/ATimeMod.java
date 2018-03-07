@@ -32,7 +32,7 @@ public class ATimeMod {
 
 	public static final String MODID = "atimemod2";
 	public static final String NAME = "AdventureTime Mod 2";
-	public static final String VERSION = "2.0.8";
+	public static final String VERSION = "2.0.9";
 
 	public static final ATimeTab creativeTab = new ATimeTab();
 	public static final Item.ToolMaterial FOURD = EnumHelper.addToolMaterial("FOURD", 0, 333, 10.0F, 16.0F, 0);
@@ -69,7 +69,6 @@ public class ATimeMod {
 	public void preInit(FMLPreInitializationEvent event) {
 		logger = event.getModLog();
 		proxy.preInit(event);
-		Registry.initOreGen();
 		System.out.println("[ATimeMod2] We're back boys.");
 	}
 
