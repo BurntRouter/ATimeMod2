@@ -16,8 +16,4 @@ public class Registry {
 		GameRegistry.addSmelting(ATimeBlocks.crystal_ore, new ItemStack(ATimeItems.crystal_gem, 1), 0.4F);
 		GameRegistry.addSmelting(Items.SUGAR, new ItemStack(ATimeItems.candy, 1), 0.1F);
 	}
-	
-	public static void initOreGen() {
-		GameRegistry.registerWorldGenerator(new WorldGen(), 3);
-	}
 }

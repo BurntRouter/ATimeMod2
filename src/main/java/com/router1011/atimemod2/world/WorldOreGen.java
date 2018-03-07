@@ -18,8 +18,8 @@ public class WorldOreGen implements IWorldGenerator {
 
 	public WorldOreGen() {
 		oreGenCrystal = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
-		oreGenDemonic = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
-		oreGenSteel = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
+		oreGenDemonic = new WorldGenMinable(ATimeBlocks.demonic_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
+		oreGenSteel = new WorldGenMinable(ATimeBlocks.steel_ore.getDefaultState(), 15, BlockMatcher.forBlock(Blocks.STONE));
 	}
 
 	@SuppressWarnings("incomplete-switch")
@@ -31,6 +31,8 @@ public class WorldOreGen implements IWorldGenerator {
 			case OVERWORLD:
 				for (int i = 0; i < 16; i++) {
 					oreGenCrystal.generate(world, random, chunkPos.add(random.nextInt(16), random.nextInt(108) + 10, random.nextInt(16)));
+					oreGenDemonic.generate(world, random, chunkPos.add(random.nextInt(16), random.nextInt(108) + 10, random.nextInt(16)));
+					oreGenSteel.generate(world, random, chunkPos.add(random.nextInt(16), random.nextInt(108) + 10, random.nextInt(16)));
 				}
 				break;
 		}
