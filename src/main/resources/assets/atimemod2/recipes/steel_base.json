@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:iron_ingot",
+            "data": 0
+        },
+        {
+            "item": "minecraft:coal",
+            "data": 0
+        }
+    ],
+    "result": {
+        "item": "atimemod2:steel_base",
+        "count": 1
+    },
+    "group": "stuff"
+}

@@ -41,6 +41,7 @@ item.paper_sword.name=Paper Sword
 item.root_sword.name=Root Sword
 item.scarlet.name=Scarlet
 item.steel_ingot.name=Steel Ingot
+item.steel_base.name=Steel Base
 
 #Entities
 entity.billy.name=Billy
