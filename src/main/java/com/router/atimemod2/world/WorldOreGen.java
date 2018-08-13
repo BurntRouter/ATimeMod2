@@ -14,11 +14,10 @@ import java.util.Random;
 import com.router.atimemod2.blocks.ATimeBlocks;
 
 public class WorldOreGen implements IWorldGenerator {
-	private final WorldGenMinable oreGenCrystal, oreGenDemonic;
+	private final WorldGenMinable oreGenCrystal;
 
 	public WorldOreGen() {
 		oreGenCrystal = new WorldGenMinable(ATimeBlocks.crystal_ore.getDefaultState(), 4, BlockMatcher.forBlock(Blocks.STONE));
-		oreGenDemonic = new WorldGenMinable(ATimeBlocks.demonic_ore.getDefaultState(), 2, BlockMatcher.forBlock(Blocks.NETHERRACK));
 	}
 
 	@SuppressWarnings("incomplete-switch")

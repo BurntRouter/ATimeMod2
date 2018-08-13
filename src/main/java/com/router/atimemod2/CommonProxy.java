@@ -1,7 +1,6 @@
 package com.router.atimemod2;
 
 import com.router.atimemod2.blocks.ATimeBlocks;
-import com.router.atimemod2.blocks.CrystalOre;
 import com.router.atimemod2.entity.ATimeLivingEntities;
 import com.router.atimemod2.gui.ATimeGuis;
 import com.router.atimemod2.items.ATimeItems;

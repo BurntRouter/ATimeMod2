@@ -24,7 +24,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2], [1.12.1], [1.12]", useMetadata = true, version = ATimeMod.VERSION)
+@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2]", useMetadata = true, version = ATimeMod.VERSION)
 public class ATimeMod {
 
 	@SidedProxy(clientSide = "com.router.atimemod2.ClientProxy", serverSide = "com.router.atimemod2.CommonProxy")
@@ -73,7 +73,7 @@ public class ATimeMod {
 	}
 
 	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {
+	public void Init(FMLInitializationEvent event) {
 		proxy.init(event);
 		Registry.initRecipes();
 		System.out.println("[ATimeMod2] Half way there!");

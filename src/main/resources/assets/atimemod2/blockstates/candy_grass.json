@@ -1,0 +1,10 @@
+{
+    "variants": {
+        "normal": { 
+			"model": "atimemod2:candy_grass" 
+		},
+		"inventory": {
+			"model": "atimemod2:candy_grass"
+		}
+    }	
+}

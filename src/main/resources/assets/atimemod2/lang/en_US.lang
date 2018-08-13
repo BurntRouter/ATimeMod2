@@ -1,8 +1,10 @@
 #Blocks
 tile.crystal_block.name=Crystal Block
 tile.crystal_ore.name=Crystal Ore
-tile.steel_ore.name=Steel Ore
-tile.demonic_ore.name=Demonic Ore
+tile.candy_dirt.name=Candy Dirt
+tile.candy_grass.name=Candy Grass
+tile.candy_log.name=Candy Log
+tile.candy_leaves.name=Candy Leaves
 
 #Items
 item.apple_pie.name=Apple Gem Pie

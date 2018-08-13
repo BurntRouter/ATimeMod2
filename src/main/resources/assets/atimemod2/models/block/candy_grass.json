@@ -1,0 +1,12 @@
+{   
+	"parent": "block/cube",
+	"textures": {
+		"up": "atimemod2:blocks/candy_grass_top",
+		"north": "atimemod2:blocks/candy_grass_side",
+		"south": "atimemod2:blocks/candy_grass_side",
+		"east": "atimemod2:blocks/candy_grass_side",
+		"west": "atimemod2:blocks/candy_grass_side",
+		"down": "atimemod2:blocks/candy_dirt",
+		"particle": "atimemod2:blocks/candy_dirt"
+	}
+}
