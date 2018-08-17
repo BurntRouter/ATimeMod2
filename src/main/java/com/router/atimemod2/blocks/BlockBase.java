@@ -357,7 +357,6 @@ public class BlockBase extends Block implements IBlockState {
 		return null;
 	}
 
-	@Override
 	public boolean doesSideBlockChestOpening(IBlockAccess world, BlockPos pos, EnumFacing side) {
 		return false;
 	}
