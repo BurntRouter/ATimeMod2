@@ -46,7 +46,7 @@ public class CandyLeaves extends BlockLeaves {
     {
         if (worldIn.rand.nextInt(chance) == 0)
         {
-            spawnAsEntity(worldIn, pos, new ItemStack(Items.APPLE));
+            spawnAsEntity(worldIn, pos, new ItemStack(Items.SUGAR));
         }
     }
     

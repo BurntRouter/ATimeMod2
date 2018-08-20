@@ -101,7 +101,7 @@ public class WorldGenCandyTree extends WorldGenAbstractTree
 
             if (state.getBlock().isAir(state, parWorld, upN) || state.getBlock().isLeaves(state, parWorld, upN))
             {
-                setBlockAndNotifyAdequately(parWorld, parBlockPos.up(height), blockStateWood.withProperty(BlockLog.LOG_AXIS, BlockLog.EnumAxis.Y));
+                setBlockAndNotifyAdequately(parWorld, parBlockPos.up(height), blockStateWood.withProperty(null, null));
             }
         }
     }
