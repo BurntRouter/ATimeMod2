@@ -32,7 +32,7 @@ public class ATimeMod {
 
 	public static final String MODID = "atimemod2";
 	public static final String NAME = "AdventureTime Mod 2";
-	public static final String VERSION = "2.0.9.1";
+	public static final String VERSION = "2.1";
 
 	public static final ATimeTab creativeTab = new ATimeTab();
 	public static final Item.ToolMaterial FOURD = EnumHelper.addToolMaterial("FOURD", 0, 333, 10.0F, 12.0F, 0);
