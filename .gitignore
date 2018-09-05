@@ -2,8 +2,6 @@ bin
 *.launch
 .settings
 .metadata
-.classpath
-.project
 
 #eclipse
 eclipse/.recommenders
@@ -18,4 +16,3 @@ build
 run
 *.gen
 *.gen
-*.*.world

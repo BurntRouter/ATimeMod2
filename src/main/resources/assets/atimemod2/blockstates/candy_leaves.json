@@ -1,4 +1,4 @@
-{
+    {
     "forge_marker": 1,
     "defaults": {
         "textures": {
@@ -10,6 +10,9 @@
             "model": "cube_all"
         },
         "inventory": {
+            "model": "cube_all"
+        },
+        "atimemod2:candy_leaves#check_decay=true,decayable=true": {
             "model": "cube_all"
         }
     }

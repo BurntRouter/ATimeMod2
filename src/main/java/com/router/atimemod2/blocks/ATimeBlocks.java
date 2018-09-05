@@ -19,6 +19,10 @@ public class ATimeBlocks {
 		public static BlockBase candy_log = new BlockBase(Material.WOOD, "candy_log", 1.2F, "axe", 0, SoundType.WOOD, 1.2F);
 		public static CandyLeaves candy_leaves = new CandyLeaves();
 		public static CandySapling candy_sapling = new CandySapling();
+		public static BlockBase ooo_log = new BlockBase(Material.WOOD, "ooo_log", 1.0F, "axe", 0, SoundType.WOOD, 1.2F);
+		public static BlockBase ooo_leaves = new BlockBase(Material.LEAVES, "ooo_leaves", 0.4F, "axe", 0, SoundType.PLANT, 0.1F);
+		public static BlockBase cottoncandy_log = new BlockBase(Material.WOOD, "cottoncandy_log", 1.0F, "axe", 0, SoundType.WOOD, 1.2F);
+		public static BlockBase cottoncandy_leaves = new BlockBase(Material.LEAVES, "cottoncandy_leaves", 0.4F, "axe", 0 ,SoundType.PLANT, 0.1F);
 		
 		public static void register(IForgeRegistry<Block> registry) {
 			registry.registerAll(
@@ -28,7 +32,11 @@ public class ATimeBlocks {
 					crystal_ore,
 					candy_log,
 					candy_leaves,
-					candy_sapling
+					candy_sapling,
+					ooo_log,
+					ooo_leaves,
+					cottoncandy_log,
+					cottoncandy_leaves
 			);
 		}
 		
@@ -40,7 +48,11 @@ public class ATimeBlocks {
 					crystal_ore.createItemBlock(),
 					candy_log.createItemBlock(),
 					candy_leaves.createItemBlock(),
-					candy_sapling.createItemBlock()
+					candy_sapling.createItemBlock(),
+					ooo_log.createItemBlock(),
+					ooo_leaves.createItemBlock(),
+					cottoncandy_log.createItemBlock(),
+					cottoncandy_leaves.createItemBlock()
 			);
 		}
 		
@@ -52,5 +64,9 @@ public class ATimeBlocks {
 			candy_log.registerItemModel(Item.getItemFromBlock(candy_log));
 			candy_leaves.registerItemModel(Item.getItemFromBlock(candy_leaves));
 			candy_sapling.registerItemModel(Item.getItemFromBlock(candy_sapling));
+			ooo_log.registerItemModel(Item.getItemFromBlock(ooo_log));
+			ooo_leaves.registerItemModel(Item.getItemFromBlock(ooo_leaves));
+			cottoncandy_log.registerItemModel(Item.getItemFromBlock(cottoncandy_log));
+			cottoncandy_leaves.registerItemModel(Item.getItemFromBlock(cottoncandy_leaves));
 		}
 }
