@@ -3,7 +3,7 @@ package com.router.atimemod2.blocks;
 import java.util.Random;
 
 import com.router.atimemod2.ATimeMod;
-import com.router.atimemod2.world.WorldGenCandyTree;
+import com.router.atimemod2.world.WorldGenTreesCandy;
 
 import net.minecraft.block.BlockBush;
 import net.minecraft.block.BlockLeaves;
@@ -32,7 +32,6 @@ import net.minecraft.world.gen.feature.WorldGenMegaJungle;
 import net.minecraft.world.gen.feature.WorldGenMegaPineTree;
 import net.minecraft.world.gen.feature.WorldGenSavannaTree;
 import net.minecraft.world.gen.feature.WorldGenTaiga2;
-import net.minecraft.world.gen.feature.WorldGenTrees;
 import net.minecraft.world.gen.feature.WorldGenerator;
 import net.minecraftforge.event.terraingen.TerrainGen;
 
@@ -40,16 +39,17 @@ public class CandySapling extends BlockBush implements IGrowable
 {
     public static final PropertyInteger STAGE = PropertyInteger.create("stage", 0, 1);
     protected static final AxisAlignedBB SAPLING_AABB = new AxisAlignedBB(0.09999999403953552D, 0.0D, 0.09999999403953552D, 0.8999999761581421D, 0.800000011920929D, 0.8999999761581421D);
-    public static String name = "candy_sapling";
-    /**
-     * Instantiates a new block sapling cloud.
-     */
+
+    protected String name = "candy_sapling";
+    protected WorldGenerator worldgenerator = new WorldGenTreesCandy(true);
+    
     public CandySapling()
     {
         setCreativeTab(ATimeMod.creativeTab);
         setSoundType(SoundType.PLANT);
         setUnlocalizedName(name);
         setRegistryName(name);
+
     }
 
     /* (non-Javadoc)
@@ -89,7 +89,6 @@ public class CandySapling extends BlockBush implements IGrowable
     public void generateTree(World worldIn, BlockPos pos, IBlockState state, Random rand)
     {
         if (!TerrainGen.saplingGrowTree(worldIn, rand, pos)) return;
-        WorldGenerator worldgenerator = new WorldGenCandyTree(true);
 
         worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 4);
 
@@ -162,6 +161,9 @@ public class CandySapling extends BlockBush implements IGrowable
         return i;
     }
 
+    /* (non-Javadoc)
+     * @see net.minecraft.block.Block#createBlockState()
+     */
     @Override
     protected BlockStateContainer createBlockState()
     {

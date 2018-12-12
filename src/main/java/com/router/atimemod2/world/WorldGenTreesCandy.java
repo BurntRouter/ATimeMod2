@@ -14,24 +14,30 @@ import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenAbstractTree;
 import net.minecraftforge.common.IPlantable;
 
-public class WorldGenCandyTree extends WorldGenAbstractTree
+public class WorldGenTreesCandy extends WorldGenAbstractTree
 {
     private IBlockState blockStateWood = ATimeBlocks.candy_log.getDefaultState();
     private IBlockState blockStateLeaves = ATimeBlocks.candy_leaves.getDefaultState().withProperty(BlockLeaves.CHECK_DECAY, Boolean.valueOf(false));
-
+    /** The minimum height of a generated tree. */
     private final int minTreeHeight = 4;
 
-    public WorldGenCandyTree(boolean parShouldNotify)
+    /**
+     * @param parShouldNotify the par should notify
+     */
+    public WorldGenTreesCandy(boolean parShouldNotify)
     {
         super(parShouldNotify);
     }
 
+    /* (non-Javadoc)
+     * @see net.minecraft.world.gen.feature.WorldGenerator#generate(net.minecraft.world.World, java.util.Random, net.minecraft.util.math.BlockPos)
+     */
     @Override
     public boolean generate(World parWorld, Random parRandom, BlockPos parBlockPos)
     {
         int minHeight = parRandom.nextInt(3) + minTreeHeight;
         
-
+        // Check if tree fits in world
         if (parBlockPos.getY() >= 1 && parBlockPos.getY() + minHeight + 1 <= parWorld.getHeight())
         {
             if (!isSuitableLocation(parWorld, parBlockPos, minHeight))
@@ -42,7 +48,7 @@ public class WorldGenCandyTree extends WorldGenAbstractTree
             {
                 IBlockState state = parWorld.getBlockState(parBlockPos.down());
 
-                if (state.getBlock().canSustainPlant(state, parWorld, parBlockPos.down(), EnumFacing.UP, (IPlantable) ATimeBlocks.candy_sapling) && parBlockPos.getY() < parWorld.getHeight() - minHeight - 1)
+                if (state.getBlock().canSustainPlant(state, parWorld, parBlockPos.down(), EnumFacing.UP, (IPlantable) Blocks.SAPLING) && parBlockPos.getY() < parWorld.getHeight() - minHeight - 1)
                 {
                     state.getBlock().onPlantGrow(state, parWorld, parBlockPos.down(), parBlockPos);
                     generateLeaves(parWorld, parBlockPos, minHeight, parRandom);
@@ -76,7 +82,7 @@ public class WorldGenCandyTree extends WorldGenAbstractTree
                 {
                     int foliageRelativeZ = foliageZ - parBlockPos.getZ();
 
-
+                    // Fill in layer with some randomness
                     if (Math.abs(foliageRelativeX) != foliageLayerRadius || Math.abs(foliageRelativeZ) != foliageLayerRadius || parRandom.nextInt(2) != 0 && foliageLayer != 0)
                     {
                         BlockPos blockPos = new BlockPos(foliageX, foliageY, foliageZ);
@@ -101,7 +107,7 @@ public class WorldGenCandyTree extends WorldGenAbstractTree
 
             if (state.getBlock().isAir(state, parWorld, upN) || state.getBlock().isLeaves(state, parWorld, upN))
             {
-                setBlockAndNotifyAdequately(parWorld, parBlockPos.up(height), blockStateWood.withProperty(null, null));
+                setBlockAndNotifyAdequately(parWorld, parBlockPos.up(height), blockStateWood.withProperty(BlockLog.LOG_AXIS, BlockLog.EnumAxis.Y));
             }
         }
     }
@@ -112,14 +118,14 @@ public class WorldGenCandyTree extends WorldGenAbstractTree
         
         for (int checkY = parBlockPos.getY(); checkY <= parBlockPos.getY() + 1 + minHeight; ++checkY)
         {
-
+            // Handle increasing space towards top of tree
             int extraSpaceNeeded = 1;
-
+            // Handle base location
             if (checkY == parBlockPos.getY())
             {
                 extraSpaceNeeded = 0;
             }             
-
+            // Handle top location
             if (checkY >= parBlockPos.getY() + 1 + minHeight - 2)
             {
                 extraSpaceNeeded = 2;
