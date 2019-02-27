@@ -1,18 +1,4 @@
-bin
-*.launch
-.settings
-.metadata
-
-#eclipse
-eclipse/.recommenders
-eclipse/.recommenders/*
-.recommenders/
-
-# gradle
-build
-.gradle
-
-# other
-run
-*.gen
-*.gen
+/.gradle/*
+/.idea/*
+/build/*
+/run/*
