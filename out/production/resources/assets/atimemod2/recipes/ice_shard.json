@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " S ",
+        "SSS",
+        " S "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:snowball"
+        }
+    },
+    "result": {
+        "item": "atimemod2:ice_shard",
+        "count": 1
+    },
+    "group": "stuff"
+}

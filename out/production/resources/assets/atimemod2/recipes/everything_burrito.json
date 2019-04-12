@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "FFF",
+        "BPB",
+        "FFF"
+    ],
+    "key": {
+        "F": {
+            "item": "atimemod2:flour"
+        },
+        "B": {
+            "item": "minecraft:cooked_beef"
+        },
+        "P": {
+            "item": "atimemod2:bacon"
+        }
+    },
+    "result": {
+        "item": "atimemod2:everything_burrito",
+        "count": 1
+    },
+    "group": "stuff"
+}

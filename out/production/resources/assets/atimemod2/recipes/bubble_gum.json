@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "atimemod2:candy"
+        },
+        {
+            "item": "minecraft:water_bucket"
+        }
+    ],
+    "result": {
+        "item": "atimemod2:bubble_gum",
+        "count": 2
+    },
+    "group": "stuff"
+}

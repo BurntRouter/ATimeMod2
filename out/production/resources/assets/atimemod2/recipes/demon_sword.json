@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " D ",
+        " D ",
+        "BSB"
+    ],
+    "key": {
+        "D": {
+            "item": "atimemod2:demon_ingot"
+        },
+        "B": {
+            "item": "atimemod2:demon_ingot"
+        },
+        "S": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "atimemod2:demon_sword",
+        "count": 1
+    },
+    "group": "stuff"
+}

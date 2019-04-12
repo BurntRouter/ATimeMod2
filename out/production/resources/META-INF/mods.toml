@@ -1,0 +1,41 @@
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[25,)" #mandatory (24 is current forge version)
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="https://github.com/BurntRouter/ATimeMod2/issues" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="atimemod2" #mandatory
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+version="2.1" #mandatory
+ # A display name for the mod
+displayName="AdventureTime Mod 2" #mandatory
+# A URL to query for updates for this mod. See the JSON update specification <here>
+#updateJSONURL="http://myurl.me/" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="https://burntrouter.info/" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="logo.png" #optional
+# A text field displayed in the mod UI
+credits="Thanks to Cartoon Network for not suing me over this mod for the last few years." #optional
+# A text field displayed in the mod UI
+authors="Router, definitelynotElijah" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+This mod adds content from the hit Cartoon Network show Adventure Time!
+Explore with Finn and Jake, complete quests, explore The Land of Ooo, and much more!
+This mod is in no way affiliated with anybody who worked on the show Adventure Time or Cartoon Network and is not sanctioned or supported by either of them.
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[25,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
