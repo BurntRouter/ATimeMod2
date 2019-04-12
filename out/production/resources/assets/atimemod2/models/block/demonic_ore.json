@@ -1,6 +1,0 @@
-{
-    "parent": "block/cube_all",
-    "textures": {
-        "all": "atimemod2:blocks/demonic_ore"
-    }
-}
