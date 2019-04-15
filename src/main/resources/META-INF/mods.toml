@@ -1,0 +1,12 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+displayURL="https://burntrouter.info"
+credits="Cartoon Network for not suing me all these years <3"
+authors="Router1011"
+[[mods]]
+modId="atimemod2"
+version="2.1A"
+displayName="AdventureTime Mod 2"
+description='''
+TODO
+'''
