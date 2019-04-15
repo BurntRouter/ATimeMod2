@@ -1,16 +1,5 @@
 {
-    "forge_marker": 1,
-    "defaults": {
-        "textures": {
-            "all": "atimemod2:blocks/crystal_block"
-        }
-    },
-    "variants": {
-        "normal": {
-            "model": "cube_all"
-        },
-        "inventory": {
-            "model": "cube_all"
-        }
-    }
+  "variants": {
+    "": { "model": "atimemod2:block/crystal_block" }
+  }
 }

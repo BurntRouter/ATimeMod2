@@ -1,19 +1,5 @@
-    {
-    "forge_marker": 1,
-    "defaults": {
-        "textures": {
-            "all": "atimemod2:blocks/candy_leaves"
-        }
-    },
+{
     "variants": {
-        "normal": {
-            "model": "cube_all"
-        },
-        "inventory": {
-            "model": "cube_all"
-        },
-        "atimemod2:candy_leaves#check_decay=true,decayable=true": {
-            "model": "cube_all"
-        }
+        "": { "model": "atimemod2:block/candy_leaves" }
     }
 }

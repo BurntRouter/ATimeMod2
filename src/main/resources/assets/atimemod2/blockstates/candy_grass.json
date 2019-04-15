@@ -1,10 +1,5 @@
 {
-    "variants": {
-        "normal": { 
-			"model": "atimemod2:candy_grass" 
-		},
-		"inventory": {
-			"model": "atimemod2:candy_grass"
-		}
-    }	
+	"variants": {
+		"": { "model": "atimemod2:block/candy_grass" }
+	}
 }
