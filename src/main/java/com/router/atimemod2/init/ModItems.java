@@ -2,10 +2,7 @@ package com.router.atimemod2.init;
 
 import com.router.atimemod2.item.*;
 import net.minecraft.block.Block;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemFood;
-import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemTier;
+import net.minecraft.item.*;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -39,6 +36,7 @@ public class ModItems {
     public static final ATSword grass_sword = null;
     public static final Item ice_shard = null;
     public static final ATSword jake_sword = null;
+    public static final ItemBucket juice_bucket = null;
     public static final ItemFood lollipop = null;
     public static final ItemFood pancake = null;
     public static final ATSword paper_sword = null;
@@ -63,6 +61,7 @@ public class ModItems {
                 new ATHoe(ItemTier.DIAMOND, 2, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_hoe"),
                 new ATPickaxe(ItemTier.DIAMOND, 2, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_pickaxe"),
                 new ATShovel(ItemTier.DIAMOND, 1, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_shovel"),
+                new ItemBucket(ModFluids.JUICE, (new Item.Properties()).maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "juice_bucket"),
 
                 //ItemBlocks
                 createItemBlockForBlock(ModBlocks.banana_yellow, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
@@ -75,8 +74,8 @@ public class ModItems {
                 createItemBlockForBlock(ModBlocks.chocolate_brown, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
                 createItemBlockForBlock(ModBlocks.cream_white, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
                 createItemBlockForBlock(ModBlocks.grape_purple, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
-                createItemBlockForBlock(ModBlocks.juice_flow, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
-                createItemBlockForBlock(ModBlocks.juice_still, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
+//                createItemBlockForBlock(ModBlocks.juice_flow, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
+//                createItemBlockForBlock(ModBlocks.juice_still, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
                 createItemBlockForBlock(ModBlocks.watermelon_pink, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
 
                 createItemBlockForBlock(ModBlocks.crystal_block, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
