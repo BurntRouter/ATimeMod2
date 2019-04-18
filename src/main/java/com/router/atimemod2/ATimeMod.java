@@ -1,87 +1,51 @@
 package com.router.atimemod2;
 
-import org.apache.logging.log4j.Logger;
-
-import com.router.atimemod2.blocks.ATimeBlocks;
-import com.router.atimemod2.items.ATimeItems;
-
-import net.minecraft.block.Block;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemArmor.ArmorMaterial;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.SoundEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.common.util.EnumHelper;
-import net.minecraftforge.event.RegistryEvent;
+import net.minecraft.item.ItemGroup;
+import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.common.Mod.EventHandler;
-import net.minecraftforge.fml.common.Mod.Instance;
-import net.minecraftforge.fml.common.SidedProxy;
-import net.minecraftforge.fml.common.event.FMLInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
-import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
-import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
+import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
+import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.common.Mod;
+import com.router.atimemod2.client.ATTab;
 
-@Mod(modid = ATimeMod.MODID, name = ATimeMod.NAME, acceptedMinecraftVersions = "[1.12.2], [1.12.1], [1.12]", useMetadata = true, version = ATimeMod.VERSION)
+@Mod(ATimeMod.MODID)
 public class ATimeMod {
 
-	@SidedProxy(clientSide = "com.router.atimemod2.ClientProxy", serverSide = "com.router.atimemod2.CommonProxy")
-	public static CommonProxy proxy;
+    public static final ItemGroup ATTab = new ATTab();
+    public static final String MODID = "atimemod2";
 
-	public static final String MODID = "atimemod2";
-	public static final String NAME = "AdventureTime Mod 2";
-	public static final String VERSION = "2.0.9.1";
+    public ATimeMod() {
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::enqueueIMC);
+        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::processIMC);
 
-	public static final ATimeTab creativeTab = new ATimeTab();
-	public static final Item.ToolMaterial FOURD = EnumHelper.addToolMaterial("FOURD", 0, 333, 10.0F, 12.0F, 0);
-	public static final Item.ToolMaterial CRYSTAL = EnumHelper.addToolMaterial("CRYSTAL", 3, 2626, 12.0F, 5.0F, 25);
-	public static final Item.ToolMaterial SCARLET = EnumHelper.addToolMaterial("SCARLET", 0, 3000, 10.0F, 8.0F, 25);
-	public static final Item.ToolMaterial GRASS = EnumHelper.addToolMaterial("GRASS", 0, 58, 10.0F, 4.0F, 0);
+        MinecraftForge.EVENT_BUS.register(this);
+    }
 
-	@Mod.Instance(MODID)
-	public static ATimeMod instance;
-	
-	public static Logger logger;
-	
-	@Mod.EventBusSubscriber
-	public static class RegistrationHandler {
-		@SubscribeEvent
-		public static void registerItems(RegistryEvent.Register<Item> event) {
-			ATimeItems.registerItems(event.getRegistry());
-			ATimeBlocks.registerItemBlocks(event.getRegistry());
-		}
-		
-		@SubscribeEvent
-		public static void registerItemModels(ModelRegistryEvent event) {
-			ATimeItems.registerItemModels();
-			ATimeBlocks.registerModels();
-		}
-		
-		@SubscribeEvent
-		public static void registerBlocks(RegistryEvent.Register<Block> event) {
-			ATimeBlocks.register(event.getRegistry());
-		}
-	}
+    public void setup(final FMLCommonSetupEvent event) {
 
-	@Mod.EventHandler
-	public void preInit(FMLPreInitializationEvent event) {
-		logger = event.getModLog();
-		proxy.preInit(event);
-		System.out.println("[ATimeMod2] Attempting to load this mess.");
-	}
+    }
 
-	@Mod.EventHandler
-	public void init(FMLInitializationEvent event) {
-		proxy.init(event);
-		Registry.initRecipes();
-		System.out.println("[ATimeMod2] Half way there!");
-	}
+    public void clientSetup(final FMLClientSetupEvent event) {
+    }
 
-	@Mod.EventHandler
-	public void postInit(FMLPostInitializationEvent event) {
-		proxy.postInit(event);
-		System.out.println("[ATimeMod2] Loaded and registered everything. Probably.");
-	}
+    public void enqueueIMC(final InterModEnqueueEvent event) {
+
+    }
+
+    public void processIMC(final InterModProcessEvent event) {
+
+    }
+
+    @SubscribeEvent
+    public void onServerStarting(FMLServerStartingEvent event) {
+        System.out.println("Caution: Weird things can happen running this on a server!");
+
+    }
 }

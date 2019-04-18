@@ -1,0 +1,22 @@
+{
+  "language.name": "English",
+  "language.region": "United States",
+  "language.code": "en_us",
+  "itemGroup.atimemod": "AdventureTime Mod 2",
+  "block.atimemod2.banana_yellow": "Banana Yellow",
+  "block.atimemod2.berry_blue": "Berry Blue",
+  "block.atimemod2.candy_dirt": "Candy Dirt",
+  "block.atimemod2.candy_grass": "Candy Grass",
+  "block.atimemod2.candy_leaves": "Candy Leaves",
+  "block.atimemod2.candy_log": "Candy Log",
+  "block.atimemod2.cherry_red": "Cherry Red",
+  "block.atimemod2.chocolate_brown": "Chocolate Brown",
+  "block.atimemod2.cream_white": "Cream White",
+  "block.atimemod2.crystal_block": "Crystal Block",
+  "block.atimemod2.crystal_ore": "Crystal Ore",
+  "block.atimemod2.demonic_ore": "Demonic Ore",
+  "block.atimemod2.grape_purple": "Grape Purple",
+  "block.atimemod2.juice": "Juice",
+  "block.atimemod2.watermelon_pink": "Watermelon Pink",
+  "item.atimemod2.bacon": "Bacon"
+}
