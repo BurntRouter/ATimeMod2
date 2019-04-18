@@ -1,4 +1,4 @@
-package com.router.atimemod2.blocks;
+package com.router.atimemod2.block;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;

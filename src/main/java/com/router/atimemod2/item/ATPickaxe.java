@@ -1,4 +1,4 @@
-package com.router.atimemod2.items;
+package com.router.atimemod2.item;
 
 import com.google.common.collect.Sets;
 import net.minecraft.block.Block;

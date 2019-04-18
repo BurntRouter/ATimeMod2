@@ -1,6 +1,6 @@
 {
     "parent": "block/cube_all",
     "textures": {
-        "all": "atimemod2:block/candy_leaves"
+      "all": "atimemod2:block/berry_blue"
     }
-}
+  }

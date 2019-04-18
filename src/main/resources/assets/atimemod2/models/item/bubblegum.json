@@ -1,6 +1,6 @@
 { 
  "parent": "item/generated",
     "textures": {
-        "layer0": "atimemod2:items/gem_apple"
+        "layer0": "atimemod2:items/bubblegum"
     }
 }

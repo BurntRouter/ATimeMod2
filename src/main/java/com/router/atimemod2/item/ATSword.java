@@ -1,12 +1,9 @@
-package com.router.atimemod2.items;
+package com.router.atimemod2.item;
 
 import com.google.common.collect.Multimap;
-import com.router.atimemod2.ATimeMod;
-import com.router.atimemod2.init.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
