@@ -20,7 +20,7 @@ loaderVersion="[25,)" #mandatory (24 is current forge version)
 modId="atimemod2" #mandatory
 
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="2.1A" #mandatory
+version="2.1PA" #mandatory
 
  # A display name for the mod
 displayName="AdventureTime Mod 2" #mandatory

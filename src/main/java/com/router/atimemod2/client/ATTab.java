@@ -9,7 +9,7 @@ public class ATTab extends ItemGroup {
 
     public ATTab() {
         super("atimemod");
-        this.setBackgroundImageName("item.png");
+        this.setBackgroundImageName("items.png");
     }
 
     @Override

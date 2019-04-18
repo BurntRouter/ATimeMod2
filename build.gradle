@@ -13,7 +13,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '2.1A'
+version = '2.1PA'
 group = 'com.router.atimemod2' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'atimemod2'
 
@@ -71,7 +71,7 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.13.2-25.0.128'
+    minecraft 'net.minecraftforge:forge:1.13.2-25.0.147'
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
@@ -97,12 +97,12 @@ dependencies {
 jar {
     manifest {
         attributes([
-            "Specification-Title": "AdventureTime Mod",
-            "Specification-Vendor": "Router1011",
+            "Specification-Title": "atimemod2",
+            "Specification-Vendor": "router1011",
             "Specification-Version": "1", // We are version 1 of ourselves
             "Implementation-Title": project.name,
             "Implementation-Version": "${version}",
-            "Implementation-Vendor" :"Router1011",
+            "Implementation-Vendor" :"router1011",
             "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }

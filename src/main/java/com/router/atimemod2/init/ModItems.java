@@ -60,8 +60,8 @@ public class ModItems {
                 new Item(new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName("crystal_gem_apple"),
                 new ATHoe(ItemTier.DIAMOND, 2, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_hoe"),
                 new ATPickaxe(ItemTier.DIAMOND, 2, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_pickaxe"),
-                new ATShovel(ItemTier.DIAMOND, 1, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_shovel"),
-                new ItemBucket(ModFluids.JUICE, (new Item.Properties()).maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "juice_bucket"),
+                new ATShovel(ItemTier.DIAMOND, 1, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_shovel"),//
+//                new ItemBucket(ModFluids.JUICE, (new Item.Properties()).maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "juice_bucket"),
 
                 //ItemBlocks
                 createItemBlockForBlock(ModBlocks.banana_yellow, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
