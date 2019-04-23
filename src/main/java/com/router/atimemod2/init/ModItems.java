@@ -46,6 +46,9 @@ public class ModItems {
     public static final Item steel_ingot = null;
     public static final Item the_enchiridion = null;
 
+    //Eggs for testing mobs, TODO Remove these
+    public static Item spawn_bmo = null;
+
     @SubscribeEvent
     public static void registerItems(RegistryEvent.Register<Item> event) {
         event.getRegistry().registerAll(
@@ -62,6 +65,7 @@ public class ModItems {
                 new ATPickaxe(ItemTier.DIAMOND, 2, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_pickaxe"),
                 new ATShovel(ItemTier.DIAMOND, 1, 1, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "crystal_shovel"),//
 //                new ItemBucket(ModFluids.JUICE, (new Item.Properties()).maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "juice_bucket"),
+                new ItemSpawnEgg(ModEntities.BMO, 0xFFFFFFF, 0x000000, new Item.Properties().maxStackSize(1).group(ATimeMod.ATTab)).setRegistryName(ATimeMod.MODID, "spawn_bmo"),
 
                 //ItemBlocks
                 createItemBlockForBlock(ModBlocks.banana_yellow, new Item.Properties().maxStackSize(64).group(ATimeMod.ATTab)),
