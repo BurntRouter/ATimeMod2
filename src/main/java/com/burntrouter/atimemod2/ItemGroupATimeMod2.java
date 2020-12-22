@@ -16,7 +16,7 @@ public class ItemGroupATimeMod2 extends ItemGroup {
 	@OnlyIn(Dist.CLIENT)
 	@Override
 	public ItemStack createIcon() {
-		return new ItemStack(ModItems.CRYSTAL_GEM.get());
+		return new ItemStack(ModItems.CRYSTAL_GEM);
 	}
 
 }

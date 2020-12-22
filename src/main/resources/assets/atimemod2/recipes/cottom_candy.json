@@ -1,0 +1,24 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "SWS",
+        "SXS",
+        " X "
+    ],
+    "key": {
+        "S": {
+            "item": "minecraft:sugar"
+        },
+        "X": {
+            "item": "minecraft:stick"
+        },
+        "W": {
+            "item": "minecraft:water_bucket"
+        }
+    },
+    "result": {
+        "item": "atimemod2:cotton_candy",
+        "count": 1
+    },
+    "group": "stuff"
+}

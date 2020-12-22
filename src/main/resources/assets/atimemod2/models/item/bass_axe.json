@@ -1,0 +1,6 @@
+{ 
+ "parent": "item/handheld",
+    "textures": {
+        "layer0": "atimemod2:items/bass_axe"
+    }
+}

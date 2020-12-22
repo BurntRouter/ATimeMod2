@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CEC",
+        "LBL",
+        "CDC"
+    ],
+    "key": {
+        "C": {
+            "item": "atimemod2:crystal_gem"
+        },
+        "E": {
+            "item": "minecraft:emerald"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "minecraft:bookshelf"
+        },
+        "D": {
+            "item": "atimemod2:demon_ingot"
+        }
+    },
+    "result": {
+        "item": "atimemod2:enchiridion_item",
+        "count": 1
+    },
+    "group": "stuff"
+}

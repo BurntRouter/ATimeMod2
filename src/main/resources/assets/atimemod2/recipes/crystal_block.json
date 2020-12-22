@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "CCC",
+        "CCC",
+        "CCC"
+    ],
+    "key": {
+        "C": {
+            "item": "atimemod2:crystal_gem"
+        }
+    },
+    "result": {
+        "item": "atimemod2:crystal_block",
+        "count": 1
+    },
+    "group": "stuff"
+}
