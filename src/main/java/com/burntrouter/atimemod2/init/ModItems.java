@@ -30,7 +30,6 @@ public class ModItems {
 	public static final Item CRYSTAL_BLOCK = new BlockItem(ModBlocks.CRYSTAL_BLOCK, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("crystal_block");
 	public static final Item CRYSTAL_ORE = new BlockItem(ModBlocks.CRYSTAL_ORE, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("crystal_ore");
 	public static final Item GRAPE_PURPLE = new BlockItem(ModBlocks.GRAPE_PURPLE, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("grape_purple");
-	public static final Item JUICE = new BlockItem(ModBlocks.JUICE, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("juice");
 	public static final Item WATERMELON_PINK = new BlockItem(ModBlocks.WATERMELON_PINK, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("watermelon_pink");
 	
 	//Foods
@@ -63,25 +62,26 @@ public class ModItems {
 	public static final Item CRYSTAL_SHOVEL = new ShovelItem(ItemTier.CRYSTAL, 0, 0, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("crystal_shovel");
 	public static final Item CRYSTAL_SWORD = new SwordItem(ItemTier.CRYSTAL, 6, 0.4F, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("crystal_sword");
 	public static final Item DEMONIC_SWORD = new SwordItem(ItemTier.DEMONIC, 6, 0.6F, new Item.Properties().group(ATimeMod2.ITEM_GROUP)).setRegistryName("demonic_sword");
-	public static final Item FOURD_SWORD = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("fourd_sword");
+/*	public static final Item FOURD_SWORD = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("fourd_sword");
 	public static final Item GRASS_SWORD = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("grass_sword");
 	public static final Item PAPER_SWORD = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("paper_sword");
 	public static final Item ROOT_SWORD = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("root_sword");
 	public static final Item SCARLET = new SwordItem(null, 0, 0, new Item.Properties().group(null).setNoRepair()).setRegistryName("scarlet");
+*/
 	
 	//Register Items
 	public static void register(IForgeRegistry<Item> forgeRegistry) {
 		//Register BlocksItem
-		forgeRegistry.registerAll(BANANA_YELLOW, BERRY_BLUE, CANDY_DIRT, CANDY_GRASS, CANDY_LEAVES, CANDY_LOG, CANDY_SAPLING, CHERRY_RED, CHOCOLATE_BROWN, CREAM_WHITE, CRYSTAL_BLOCK, GRAPE_PURPLE, JUICE, WATERMELON_PINK);
+		forgeRegistry.registerAll(BANANA_YELLOW, BERRY_BLUE, CANDY_DIRT, CANDY_GRASS, CANDY_LEAVES, CANDY_LOG, CANDY_SAPLING, CHERRY_RED, CHOCOLATE_BROWN, CREAM_WHITE, CRYSTAL_BLOCK, GRAPE_PURPLE, WATERMELON_PINK);
 		
 		//Register Foods
-		forgeRegistry.registerAll(BACON, BACON_PANCAKE, BUBBLEGUM, CANDY, COTTON_CANDY);
+		forgeRegistry.registerAll(BACON, BACON_PANCAKE, BUBBLEGUM, CANDY, COTTON_CANDY, CRYSTAL_GEM_APPLE, DONUT, EVERYTHING_BURRITO, LOLLIPOP, PANCAKE);
 		
 		//Register Items
-		forgeRegistry.registerAll(CRYSTAL_GEM);
+		forgeRegistry.registerAll(CRYSTAL_GEM, DEMON_BLOOD, DEMONIC_INGOT, ENCHIRIDION, FLOUR, STEEL_INGOT);
 		
 		//Register Tools
-		forgeRegistry.registerAll(BASS_AXE, BILLY_GAUNTLET, CRYSTAL_AXE, CRYSTAL_HOE, CRYSTAL_PICKAXE, CRYSTAL_SHOVEL, CRYSTAL_SWORD);
+		forgeRegistry.registerAll(BASS_AXE, BILLY_GAUNTLET, CRYSTAL_AXE, CRYSTAL_HOE, CRYSTAL_PICKAXE, CRYSTAL_SHOVEL, CRYSTAL_SWORD, DEMONIC_SWORD);
 		
 
 	}

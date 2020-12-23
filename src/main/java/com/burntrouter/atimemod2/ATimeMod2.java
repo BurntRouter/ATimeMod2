@@ -4,11 +4,14 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.burntrouter.atimemod2.init.ModBlocks;
+import com.burntrouter.atimemod2.init.ModFluids;
 import com.burntrouter.atimemod2.init.ModItems;
 
 import net.minecraft.block.Block;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber.Bus;
@@ -26,13 +29,16 @@ public class ATimeMod2 {
 	
     public ATimeMod2()
     {
+		final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
     	FMLJavaModLoadingContext.get().getModEventBus().register(this);
+    	ModFluids.initialise(modEventBus);
+
     }
 	
 
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
-    public static class ModEvents
-    {
+    public static class ModEvents {
+
 	    @SubscribeEvent
 	    public static void onBlocksRegistry(final RegistryEvent.Register<Block> event)
 	    {
@@ -44,5 +50,6 @@ public class ATimeMod2 {
 	    {
 	        ModItems.register(event.getRegistry());
 	    }
+
     }
 }
