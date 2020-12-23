@@ -1,0 +1,20 @@
+{
+    "type": "atimemod2:demon_blood",
+  
+    "conditions": 
+    [
+      {
+        "condition": "minecraft:killed_by_player"
+      },
+      
+      {
+          "condition": "minecraft:entity_properties",
+          "predicate": {
+            "type": "minecraft:zombified_piglin"
+          },
+          "entity": "this"
+      }
+    ],
+    
+    "item": "atimemod2:demon_blood"
+  }
