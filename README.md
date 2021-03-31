@@ -1,8 +1,9 @@
-[![Build Status](https://travis-ci.org/BurntRouter/ATimeMod2.svg?branch=master)](https://travis-ci.org/BurntRouter/ATimeMod2)
+# Fabric Example Mod
 
-AdventureTime Mod 2
-I'm back with the AdventureTime Mod for Minecraft 1.12.1+
-It's extra :b:oneless'
+## Setup
 
-"License"
-Just don't claim it as yours. You can use the code for examples. You can't steal the textures or models. Please don't upload on other websites.
+For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+
+## License
+
+This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
