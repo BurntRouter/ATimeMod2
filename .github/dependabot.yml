@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: gradle
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: net.minecraftforge:forge
+    versions:
+    - 1.16.5-36.1.12
+    - 1.16.5-36.1.4
